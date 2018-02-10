@@ -1,0 +1,49 @@
+{
+    "docs": [
+        {
+            "location": "/", 
+            "text": "Greenter - Facturaci\u00f3n Electr\u00f3nica\n\n\n\n\n\n\n\n\n\n\n\n\n   \n\nPHP Implementaci\u00f3n de la Facturaci\u00f3n Electr\u00f3nica Sunat - Per\u00fa\n\n\n\n  \n\n\n\n\n\nInstall\n\n\ncomposer require greenter/greenter\n\n\n\n\nPara propositos de prueba, visite \nGreenter Sampple\n.\n\n\nCaracteristicas\n\n\nDocumentos Soportados.\n\n\n\n\nFactura Electr\u00f3nica\n\n\nBoleta Electr\u00f3nica\n\n\nNota de Cr\u00e9dito Electr\u00f3nica\n\n\nNota de D\u00e9bito Electr\u00f3nica\n\n\nResumen Diario de Boletas\n    \n Version 2.1 apartir del 01/01/2018\n\n\nComunicaci\u00f3n de Bajas\n\n\nGuia Remisi\u00f3n Electr\u00f3nica\n\n\nRetenci\u00f3n Electr\u00f3nica\n\n\nPercepci\u00f3n Electr\u00f3nica\n\n\nResumen de Reversiones\n\n\n\n\nWeb Services\n\n\n\n\nEnvio y empaquetado de los documentos electr\u00f3nicos\n\n\nConsulta de tickets\n\n\nConsulta de Cdr\n\n\n\n\nXML\n\n\n\n\nEstandar UBL v2.0, v2.1\n\n\nSignature xmldsig\n\n\n\n\nRepresentaci\u00f3n Impresa.\n\n\n\n\nGeneracion de HTML Report \ngreenter/report\n\n\nGeneracion de PDF empleando \ngreenter/htmltopdf\n\n\n\n\nUsed Packages\n\n\n\n\ngreenter/core\n\n\ngreenter/xml\n\n\ngreenter/ws\n\n\ngreenter/xmldsig", 
+            "title": "Principal"
+        }, 
+        {
+            "location": "/#greenter-facturacion-electronica", 
+            "text": "PHP Implementaci\u00f3n de la Facturaci\u00f3n Electr\u00f3nica Sunat - Per\u00fa", 
+            "title": "Greenter - Facturaci\u00f3n Electr\u00f3nica"
+        }, 
+        {
+            "location": "/#install", 
+            "text": "composer require greenter/greenter  Para propositos de prueba, visite  Greenter Sampple .", 
+            "title": "Install"
+        }, 
+        {
+            "location": "/#caracteristicas", 
+            "text": "", 
+            "title": "Caracteristicas"
+        }, 
+        {
+            "location": "/#documentos-soportados", 
+            "text": "Factura Electr\u00f3nica  Boleta Electr\u00f3nica  Nota de Cr\u00e9dito Electr\u00f3nica  Nota de D\u00e9bito Electr\u00f3nica  Resumen Diario de Boletas\n      Version 2.1 apartir del 01/01/2018  Comunicaci\u00f3n de Bajas  Guia Remisi\u00f3n Electr\u00f3nica  Retenci\u00f3n Electr\u00f3nica  Percepci\u00f3n Electr\u00f3nica  Resumen de Reversiones", 
+            "title": "Documentos Soportados."
+        }, 
+        {
+            "location": "/#web-services", 
+            "text": "Envio y empaquetado de los documentos electr\u00f3nicos  Consulta de tickets  Consulta de Cdr", 
+            "title": "Web Services"
+        }, 
+        {
+            "location": "/#xml", 
+            "text": "Estandar UBL v2.0, v2.1  Signature xmldsig", 
+            "title": "XML"
+        }, 
+        {
+            "location": "/#representacion-impresa", 
+            "text": "Generacion de HTML Report  greenter/report  Generacion de PDF empleando  greenter/htmltopdf", 
+            "title": "Representaci\u00f3n Impresa."
+        }, 
+        {
+            "location": "/#used-packages", 
+            "text": "greenter/core  greenter/xml  greenter/ws  greenter/xmldsig", 
+            "title": "Used Packages"
+        }
+    ]
+}

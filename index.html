@@ -1,0 +1,390 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+        <meta name="description" content="Facturación Electrónica Sunat - Perú">
+      
+      
+        <link rel="canonical" href="https://giansalex.github.io/greenter/">
+      
+      
+        <meta name="author" content="Giancarlos Salas">
+      
+      
+        <meta name="lang:clipboard.copy" content="Copiar al portapapeles">
+      
+        <meta name="lang:clipboard.copied" content="Copiado al portapapeles">
+      
+        <meta name="lang:search.language" content="es">
+      
+        <meta name="lang:search.result.none" content="No se encontraron documentos">
+      
+        <meta name="lang:search.result.one" content="1 documento encontrado">
+      
+        <meta name="lang:search.result.other" content="# documentos encontrados">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="./img/sunat.ico">
+      <meta name="generator" content="mkdocs-0.17.2, mkdocs-material-2.2.6">
+    
+    
+      
+        <title>Greenter</title>
+      
+    
+    
+      <link rel="stylesheet" href="./assets/stylesheets/application.6525f7f6.css">
+      
+        <link rel="stylesheet" href="./assets/stylesheets/application-palette.792431c1.css">
+      
+    
+    
+      <script src="./assets/javascripts/modernizr.1aa3b519.js"></script>
+    
+    
+      
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.10.0/themes/prism-okaidia.min.css">
+    
+    
+  </head>
+  
+    
+    
+    
+      <body data-md-color-primary="green" data-md-color-accent="indigo">
+    
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448" viewBox="0 0 416 448" id="github"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19T128 352t-18.125-8.5-10.75-19T96 304t3.125-20.5 10.75-19T128 256t18.125 8.5 10.75 19T160 304zm160 0q0 10-3.125 20.5t-10.75 19T288 352t-18.125-8.5-10.75-19T256 304t3.125-20.5 10.75-19T288 256t18.125 8.5 10.75 19T320 304zm40 0q0-30-17.25-51T296 232q-10.25 0-48.75 5.25Q229.5 240 208 240t-39.25-2.75Q130.75 232 120 232q-29.5 0-46.75 21T56 304q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75T360 304zm56-44q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5T212 416q-19.5 0-35.5-.75t-36.875-3.125-38.125-7.5-34.25-12.875T37 371.5t-21.5-28.75Q0 312 0 260q0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875Q171.5 96 212 96q37 0 70 8 26.25-20.5 46.75-30.25T376 64q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="drawer">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search">
+    <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="https://giansalex.github.io/greenter" title="Greenter" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon">receipt</i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            
+              <span class="md-header-nav__topic">
+                Greenter
+              </span>
+              <span class="md-header-nav__topic">
+                Principal
+              </span>
+            
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          
+            <label class="md-icon md-icon--search md-header-nav__button" for="search"></label>
+            
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="search"></label>
+  <div class="md-search__inner">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" required placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query">
+      <label class="md-icon md-search__icon" for="search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset">&#xE5CD;</button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Teclee para comenzar búsqueda
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+          
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+
+  <a href="https://github.com/giansalex/greenter/" title="Ir al repositorio" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      giansalex/greenter
+    </div>
+  </a>
+
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="drawer">
+    <span class="md-nav__button md-logo">
+      
+        <i class="md-icon">receipt</i>
+      
+    </span>
+    Greenter
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+
+  <a href="https://github.com/giansalex/greenter/" title="Ir al repositorio" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      giansalex/greenter
+    </div>
+  </a>
+
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+      
+    
+    
+    <a href="." title="Principal" class="md-nav__link md-nav__link--active">
+      Principal
+    </a>
+    
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/giansalex/greenter/edit/master/docs/index.md" title="Editar esta página" class="md-icon md-content__icon">&#xE3C9;</a>
+                
+                
+                <h1 id="greenter-facturacion-electronica">Greenter - Facturación Electrónica<a class="headerlink" href="#greenter-facturacion-electronica" title="Permanent link">&para;</a></h1>
+<p><a href="https://travis-ci.org/giansalex/greenter"><img alt="Travis-CI" src="https://img.shields.io/travis/giansalex/greenter.svg?label=travis-ci&amp;branch=master&amp;style=flat-square" /></a>
+<a href="https://coveralls.io/github/giansalex/greenter?branch=master"><img alt="Coverage Status" src="https://img.shields.io/coveralls/giansalex/greenter.svg?label=coveralls&amp;style=flat-square&amp;branch=master" /></a>
+<a href="https://www.codacy.com/app/giansalex/greenter?utm_source=github.com&amp;amp;utm_medium=referral&amp;amp;utm_content=giansalex/greenter&amp;amp;utm_campaign=Badge_Grade"><img alt="Codacy Badge" src="https://img.shields.io/codacy/grade/eccd5a16d035464cbe40b1cf9d0f9f43.svg?style=flat-square" /></a>
+<a href="https://scrutinizer-ci.com/g/giansalex/greenter/?branch=master"><img alt="Code Coverage" src="https://img.shields.io/scrutinizer/coverage/g/giansalex/greenter.svg?branch=master&amp;style=flat-square" /></a>
+<a href="https://scrutinizer-ci.com/g/giansalex/greenter/build-status/master"><img alt="Build Status" src="https://img.shields.io/scrutinizer/build/g/giansalex/greenter.svg?branch=master&amp;style=flat-square" /></a>
+<a href="https://packagist.org/packages/greenter/greenter"><img alt="Packagist" src="https://img.shields.io/packagist/v/greenter/greenter.svg?style=flat-square" /></a>   <br />
+PHP Implementación de la Facturación Electrónica Sunat - Perú</p>
+<p align="center">
+  <img alt="Sunat Facturacion Electronica" src="https://raw.githubusercontent.com/giansalex/greenter/master/docs/img/sunat.ico">
+</p>
+
+<h1 id="install">Install<a class="headerlink" href="#install" title="Permanent link">&para;</a></h1>
+<pre class="code"><code class="language-bash">composer require greenter/greenter</code></pre>
+
+
+<p>Para propositos de prueba, visite <a href="https://github.com/giansalex/greenter-sample">Greenter Sampple</a>.</p>
+<h2 id="caracteristicas">Caracteristicas<a class="headerlink" href="#caracteristicas" title="Permanent link">&para;</a></h2>
+<h3 id="documentos-soportados">Documentos Soportados.<a class="headerlink" href="#documentos-soportados" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Factura Electrónica</li>
+<li>Boleta Electrónica</li>
+<li>Nota de Crédito Electrónica</li>
+<li>Nota de Débito Electrónica</li>
+<li>Resumen Diario de Boletas
+    &gt; Version 2.1 apartir del 01/01/2018</li>
+<li>Comunicación de Bajas</li>
+<li>Guia Remisión Electrónica</li>
+<li>Retención Electrónica</li>
+<li>Percepción Electrónica</li>
+<li>Resumen de Reversiones</li>
+</ul>
+<h3 id="web-services">Web Services<a class="headerlink" href="#web-services" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Envio y empaquetado de los documentos electrónicos</li>
+<li>Consulta de tickets</li>
+<li>Consulta de Cdr</li>
+</ul>
+<h3 id="xml">XML<a class="headerlink" href="#xml" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Estandar UBL v2.0, v2.1</li>
+<li>Signature xmldsig</li>
+</ul>
+<h3 id="representacion-impresa">Representación Impresa.<a class="headerlink" href="#representacion-impresa" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Generacion de HTML Report <a href="https://github.com/giansalex/greenter-report">greenter/report</a></li>
+<li>Generacion de PDF empleando <a href="https://github.com/giansalex/greenter-htmltopdf">greenter/htmltopdf</a></li>
+</ul>
+<h3 id="used-packages">Used Packages<a class="headerlink" href="#used-packages" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://github.com/giansalex/greenter-core">greenter/core</a></li>
+<li><a href="https://github.com/giansalex/greenter-xml">greenter/xml</a></li>
+<li><a href="https://github.com/giansalex/greenter-ws">greenter/ws</a></li>
+<li><a href="https://github.com/giansalex/xmldsig">greenter/xmldsig</a></li>
+</ul>
+                
+                  
+                
+              
+              
+                
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="http://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+        
+  <div class="md-footer-social">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+      <a href="https://github.com/giansalex" class="md-footer-social__link fa fa-github"></a>
+    
+  </div>
+
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="./assets/javascripts/application.cae2244d.js"></script>
+      
+        
+        
+          
+          <script src="./assets/javascripts/lunr/lunr.stemmer.support.js"></script>
+          
+            
+              
+              <script src="./assets/javascripts/lunr/lunr.es.js"></script>
+            
+          
+          
+        
+      
+      <script>app.initialize({version:"0.17.2",url:{base:"."}})</script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.10.0/prism.min.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.10.0/components/prism-php.min.js"></script>
+      
+    
+    
+      
+        <script>!function(e,a,t,n,o,c,i){e.GoogleAnalyticsObject=o,e.ga=e.ga||function(){(e.ga.q=e.ga.q||[]).push(arguments)},e.ga.l=1*new Date,c=a.createElement(t),i=a.getElementsByTagName(t)[0],c.async=1,c.src="https://www.google-analytics.com/analytics.js",i.parentNode.insertBefore(c,i)}(window,document,"script",0,"ga"),ga("create","UA-90097417-4","auto"),ga("set","anonymizeIp",!0),ga("send","pageview");var links=document.getElementsByTagName("a");Array.prototype.map.call(links,function(e){e.host!=document.location.host&&e.addEventListener("click",function(){var a=e.getAttribute("data-md-action")||"follow";ga("send","event","outbound",a,e.href)})});var query=document.forms.search.query;query.addEventListener("blur",function(){if(this.value){var e=document.location.pathname;ga("send","pageview",e+"?q="+this.value)}})</script>
+      
+    
+  </body>
+</html>
