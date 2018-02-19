@@ -4,9 +4,27 @@
     
     <url>
      <loc>https://giansalex.github.io/greenter/</loc>
-     <lastmod>2018-02-13</lastmod>
+     <lastmod>2018-02-19</lastmod>
      <changefreq>daily</changefreq>
     </url>
+    
+
+    
+    <url>
+     <loc>https://giansalex.github.io/greenter/starter/</loc>
+     <lastmod>2018-02-19</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+    
+        
+    <url>
+     <loc>https://giansalex.github.io/greenter/news/</loc>
+     <lastmod>2018-02-19</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
     
 
 </urlset>
