@@ -10,7 +10,7 @@
       <meta name="viewport" content="width=device-width,initial-scale=1">
       <meta http-equiv="x-ua-compatible" content="ie=edge">
       
-        <meta name="description" content="Facturación Electrónica Sunat - Perú">
+        <meta name="description" content="Facturación Electrónica Sunat en Perú, siguiendo el estándar UBL 2.1">
       
       
         <link rel="canonical" href="https://giansalex.github.io/greenter/starter/">
@@ -38,7 +38,7 @@
     
     
       
-        <title>Primeros Pasos - Greenter - Facturación Electrónica</title>
+        <title>Primeros Pasos - Greenter - Facturación Electrónica en Perú</title>
       
     
     
@@ -57,8 +57,6 @@
       
       <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     
-    
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.10.0/themes/prism-okaidia.min.css">
     
     
   </head>
@@ -85,7 +83,7 @@
   <nav class="md-header-nav md-grid">
     <div class="md-flex">
       <div class="md-flex__cell md-flex__cell--shrink">
-        <a href="https://giansalex.github.io/greenter" title="Greenter - Facturación Electrónica" class="md-header-nav__button md-logo">
+        <a href="https://giansalex.github.io/greenter" title="Greenter - Facturación Electrónica en Perú" class="md-header-nav__button md-logo">
           
             <i class="md-icon">receipt</i>
           
@@ -99,7 +97,7 @@
           
             
               <span class="md-header-nav__topic">
-                Greenter - Facturación Electrónica
+                Greenter - Facturación Electrónica en Perú
               </span>
               <span class="md-header-nav__topic">
                 Primeros Pasos
@@ -191,6 +189,20 @@
         
       
         
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
   
   
     <li class="md-tabs__item">
@@ -221,7 +233,7 @@
         <i class="md-icon">receipt</i>
       
     </span>
-    Greenter - Facturación Electrónica
+    Greenter - Facturación Electrónica en Perú
   </label>
   
     <div class="md-nav__source">
@@ -352,15 +364,99 @@
       
 
 
+  <li class="md-nav__item">
+    <a href="../migrate2.1/" title="Migrar a UBL 2.1" class="md-nav__link">
+      Migrar a UBL 2.1
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../examples/exonerada/" title="F. Exonerada" class="md-nav__link">
+      F. Exonerada
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../examples/gratuita/" title="F. Gratuita" class="md-nav__link">
+      F. Gratuita
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../examples/descuento-linea/" title="F. Descuentos" class="md-nav__link">
+      F. Descuentos
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../examples/percepcion/" title="F. Percepción" class="md-nav__link">
+      F. Percepción
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../examples/anticipo/" title="F. Anticipos" class="md-nav__link">
+      F. Anticipos
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../examples/detraccion/" title="F. Detracción" class="md-nav__link">
+      F. Detracción
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-11" type="checkbox" id="nav-11">
     
-    <label class="md-nav__link" for="nav-4">
+    <label class="md-nav__link" for="nav-11">
       News
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-4">
+      <label class="md-nav__title" for="nav-11">
         News
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -455,7 +551,11 @@
                 
                 
                 <h1 id="empezando-con-greenter">Empezando con Greenter<a class="headerlink" href="#empezando-con-greenter" title="Permanent link">&para;</a></h1>
-<p>Después de <a href="https://giansalex.github.io/greenter/#install">instalar greenter</a> podrá empezar a emitir comprobantes electrónicos.</p>
+<p>Después de <a href="https://giansalex.github.io/greenter/#install">instalar greenter</a> podrá empezar a emitir comprobantes electrónicos.<br />
+Para este ejemplo se usará la version <strong>UBL 2.1</strong>.</p>
+<blockquote>
+<p>Las línas resaltadas en el código son los nuevos campos requeridos en el UBL 2.1</p>
+</blockquote>
 <h2 id="requerimientos">Requerimientos<a class="headerlink" href="#requerimientos" title="Permanent link">&para;</a></h2>
 <ul>
 <li>Certificado en formato PEM</li>
@@ -470,112 +570,124 @@ credenciales por defecto, user <code>20000000001MODDATOS</code>, password <code>
 la clave y seguir el siguiente <a href="https://github.com/giansalex/xmldsig/blob/master/CONVERT.md#convert-to-pem">ejemplo</a></p>
 </div>
 <p>Crearemos el archivo <code>config.php</code> y agregaremos lo siguiente:</p>
-<pre class="code"><code class="language-php">use Greenter\Ws\Services\SunatEndpoints;
+<div class="codehilite"><pre><span></span><span class="cp">&lt;?php</span>
+<span class="k">use</span> <span class="nx">Greenter\Ws\Services\SunatEndpoints</span><span class="p">;</span>
 
-$see = new \Greenter\See();
-$see-&gt;setService(SunatEndpoints::FE_BETA);
-$see-&gt;setCertificate(file_get_contents(__DIR__.'/certificate.pem'));
-$see-&gt;setCredentials('20000000001MODDATOS', 'moddatos');
+<span class="nv">$see</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">\Greenter\See</span><span class="p">();</span>
+<span class="nv">$see</span><span class="o">-&gt;</span><span class="na">setService</span><span class="p">(</span><span class="nx">SunatEndpoints</span><span class="o">::</span><span class="na">FE_BETA</span><span class="p">);</span>
+<span class="nv">$see</span><span class="o">-&gt;</span><span class="na">setCertificate</span><span class="p">(</span><span class="nb">file_get_contents</span><span class="p">(</span><span class="no">__DIR__</span><span class="o">.</span><span class="s1">&#39;/certificate.pem&#39;</span><span class="p">));</span>
+<span class="nv">$see</span><span class="o">-&gt;</span><span class="na">setCredentials</span><span class="p">(</span><span class="s1">&#39;20000000001MODDATOS&#39;</span><span class="p">,</span> <span class="s1">&#39;moddatos&#39;</span><span class="p">);</span>
 
-return $see;</code></pre>
+<span class="k">return</span> <span class="nv">$see</span><span class="p">;</span>
+</pre></div>
 
 
 <h2 id="factura-electronica">Factura Electrónica<a class="headerlink" href="#factura-electronica" title="Permanent link">&para;</a></h2>
 <p>Elaboraremos nuestra primera factura electrónica, para ello creamos el archivo <code>factura.php</code> y agregaremos el siguiente código:</p>
-<pre class="code"><code class="language-php">use Greenter\Model\Client\Client;
-use Greenter\Model\Company\Company;
-use Greenter\Model\Company\Address;
-use Greenter\Model\Sale\Invoice;
-use Greenter\Model\Sale\SaleDetail;
-use Greenter\Model\Sale\Legend;
-use Greenter\Ws\Services\SunatEndpoints;
+<div class="codehilite"><pre><span></span><span class="cp">&lt;?php</span>
 
-require __DIR__.'/vendor/autoload.php';
+<span class="k">use</span> <span class="nx">Greenter\Model\Client\Client</span><span class="p">;</span>
+<span class="k">use</span> <span class="nx">Greenter\Model\Company\Company</span><span class="p">;</span>
+<span class="k">use</span> <span class="nx">Greenter\Model\Company\Address</span><span class="p">;</span>
+<span class="k">use</span> <span class="nx">Greenter\Model\Sale\Invoice</span><span class="p">;</span>
+<span class="k">use</span> <span class="nx">Greenter\Model\Sale\SaleDetail</span><span class="p">;</span>
+<span class="k">use</span> <span class="nx">Greenter\Model\Sale\Legend</span><span class="p">;</span>
 
-$see = require __DIR__.'/config.php';
+<span class="k">require</span> <span class="no">__DIR__</span><span class="o">.</span><span class="s1">&#39;/vendor/autoload.php&#39;</span><span class="p">;</span>
 
-// Cliente
-$client = new Client();
-$client-&gt;setTipoDoc('6')
-    -&gt;setNumDoc('20000000001')
-    -&gt;setRznSocial('EMPRESA 1');
+<span class="nv">$see</span> <span class="o">=</span> <span class="k">require</span> <span class="no">__DIR__</span><span class="o">.</span><span class="s1">&#39;/config.php&#39;</span><span class="p">;</span>
 
-// Emisor
-$address = new Address();
-$address-&gt;setUbigueo('150101')
-    -&gt;setDepartamento('LIMA')
-    -&gt;setProvincia('LIMA')
-    -&gt;setDistrito('LIMA')
-    -&gt;setUrbanizacion('NONE')
-    -&gt;setDireccion('AV LS');
+<span class="c1">// Cliente</span>
+<span class="nv">$client</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Client</span><span class="p">();</span>
+<span class="nv">$client</span><span class="o">-&gt;</span><span class="na">setTipoDoc</span><span class="p">(</span><span class="s1">&#39;6&#39;</span><span class="p">)</span>
+    <span class="o">-&gt;</span><span class="na">setNumDoc</span><span class="p">(</span><span class="s1">&#39;20000000001&#39;</span><span class="p">)</span>
+    <span class="o">-&gt;</span><span class="na">setRznSocial</span><span class="p">(</span><span class="s1">&#39;EMPRESA 1&#39;</span><span class="p">);</span>
 
-$company = new Company();
-$company-&gt;setRuc('20000000001')
-    -&gt;setRazonSocial('EMPRESA SAC')
-    -&gt;setNombreComercial('EMPRESA')
-    -&gt;setAddress($address);
+<span class="c1">// Emisor</span>
+<span class="nv">$address</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Address</span><span class="p">();</span>
+<span class="nv">$address</span><span class="o">-&gt;</span><span class="na">setUbigueo</span><span class="p">(</span><span class="s1">&#39;150101&#39;</span><span class="p">)</span>
+    <span class="o">-&gt;</span><span class="na">setDepartamento</span><span class="p">(</span><span class="s1">&#39;LIMA&#39;</span><span class="p">)</span>
+    <span class="o">-&gt;</span><span class="na">setProvincia</span><span class="p">(</span><span class="s1">&#39;LIMA&#39;</span><span class="p">)</span>
+    <span class="o">-&gt;</span><span class="na">setDistrito</span><span class="p">(</span><span class="s1">&#39;LIMA&#39;</span><span class="p">)</span>
+    <span class="o">-&gt;</span><span class="na">setUrbanizacion</span><span class="p">(</span><span class="s1">&#39;NONE&#39;</span><span class="p">)</span>
+    <span class="o">-&gt;</span><span class="na">setDireccion</span><span class="p">(</span><span class="s1">&#39;AV LS&#39;</span><span class="p">);</span>
 
-// Venta
-$invoice = (new Invoice())
-    -&gt;setTipoDoc('01')
-    -&gt;setSerie('F001')
-    -&gt;setCorrelativo('1')
-    -&gt;setFechaEmision(new DateTime())
-    -&gt;setTipoMoneda('PEN')
-    -&gt;setClient($client)
-    -&gt;setMtoOperGravadas(200.00)
-    -&gt;setMtoOperExoneradas(0.00)
-    -&gt;setMtoOperInafectas(0.00)
-    -&gt;setMtoIGV(36.00)
-    -&gt;setMtoImpVenta(2236.00)
-    -&gt;setCompany($company);
+<span class="nv">$company</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Company</span><span class="p">();</span>
+<span class="nv">$company</span><span class="o">-&gt;</span><span class="na">setRuc</span><span class="p">(</span><span class="s1">&#39;20000000001&#39;</span><span class="p">)</span>
+    <span class="o">-&gt;</span><span class="na">setRazonSocial</span><span class="p">(</span><span class="s1">&#39;EMPRESA SAC&#39;</span><span class="p">)</span>
+    <span class="o">-&gt;</span><span class="na">setNombreComercial</span><span class="p">(</span><span class="s1">&#39;EMPRESA&#39;</span><span class="p">)</span>
+    <span class="o">-&gt;</span><span class="na">setAddress</span><span class="p">(</span><span class="nv">$address</span><span class="p">);</span>
 
-$item = (new SaleDetail())
-    -&gt;setCodProducto('P001')
-    -&gt;setUnidad('NIU')
-    -&gt;setCantidad(2)
-    -&gt;setDescripcion('PRODUCTO 1')
-    -&gt;setIgv(18.00)
-    -&gt;setTipAfeIgv('10')
-    -&gt;setMtoValorVenta(100.00)
-    -&gt;setMtoValorUnitario(50.00)
-    -&gt;setMtoPrecioUnitario(56.00);
+<span class="c1">// Venta</span>
+<span class="nv">$invoice</span> <span class="o">=</span> <span class="p">(</span><span class="k">new</span> <span class="nx">Invoice</span><span class="p">())</span>
+<span class="hll">    <span class="o">-&gt;</span><span class="na">setUblVersion</span><span class="p">(</span><span class="s1">&#39;2.1&#39;</span><span class="p">)</span>
+</span><span class="hll">    <span class="o">-&gt;</span><span class="na">setTipoOperacion</span><span class="p">(</span><span class="s1">&#39;0101&#39;</span><span class="p">)</span> <span class="c1">// Catalog. 51</span>
+</span>    <span class="o">-&gt;</span><span class="na">setTipoDoc</span><span class="p">(</span><span class="s1">&#39;01&#39;</span><span class="p">)</span>
+    <span class="o">-&gt;</span><span class="na">setSerie</span><span class="p">(</span><span class="s1">&#39;F001&#39;</span><span class="p">)</span>
+    <span class="o">-&gt;</span><span class="na">setCorrelativo</span><span class="p">(</span><span class="s1">&#39;1&#39;</span><span class="p">)</span>
+    <span class="o">-&gt;</span><span class="na">setFechaEmision</span><span class="p">(</span><span class="k">new</span> <span class="nx">DateTime</span><span class="p">())</span>
+    <span class="o">-&gt;</span><span class="na">setTipoMoneda</span><span class="p">(</span><span class="s1">&#39;PEN&#39;</span><span class="p">)</span>
+    <span class="o">-&gt;</span><span class="na">setClient</span><span class="p">(</span><span class="nv">$client</span><span class="p">)</span>
+    <span class="o">-&gt;</span><span class="na">setMtoOperGravadas</span><span class="p">(</span><span class="mf">100.00</span><span class="p">)</span>
+    <span class="o">-&gt;</span><span class="na">setMtoIGV</span><span class="p">(</span><span class="mf">18.00</span><span class="p">)</span>
+<span class="hll">    <span class="o">-&gt;</span><span class="na">setTotalImpuestos</span><span class="p">(</span><span class="mf">18.00</span><span class="p">)</span>
+</span><span class="hll">    <span class="o">-&gt;</span><span class="na">setValorVenta</span><span class="p">(</span><span class="mf">100.00</span><span class="p">)</span>
+</span>    <span class="o">-&gt;</span><span class="na">setMtoImpVenta</span><span class="p">(</span><span class="mf">118.00</span><span class="p">)</span>
+    <span class="o">-&gt;</span><span class="na">setCompany</span><span class="p">(</span><span class="nv">$company</span><span class="p">);</span>
 
-$legend = (new Legend())
-    -&gt;setCode('1000')
-    -&gt;setValue('SON DOSCIENTOS TREINTA Y SEIS CON 00/100 SOLES');
+<span class="nv">$item</span> <span class="o">=</span> <span class="p">(</span><span class="k">new</span> <span class="nx">SaleDetail</span><span class="p">())</span>
+    <span class="o">-&gt;</span><span class="na">setCodProducto</span><span class="p">(</span><span class="s1">&#39;P001&#39;</span><span class="p">)</span>
+    <span class="o">-&gt;</span><span class="na">setUnidad</span><span class="p">(</span><span class="s1">&#39;NIU&#39;</span><span class="p">)</span>
+    <span class="o">-&gt;</span><span class="na">setCantidad</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+    <span class="o">-&gt;</span><span class="na">setDescripcion</span><span class="p">(</span><span class="s1">&#39;PRODUCTO 1&#39;</span><span class="p">)</span>
+<span class="hll">    <span class="o">-&gt;</span><span class="na">setMtoBaseIgv</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
+</span><span class="hll">    <span class="o">-&gt;</span><span class="na">setPorcentajeIgv</span><span class="p">(</span><span class="mf">18.00</span><span class="p">)</span> <span class="c1">// 18%</span>
+</span>    <span class="o">-&gt;</span><span class="na">setIgv</span><span class="p">(</span><span class="mf">18.00</span><span class="p">)</span>
+    <span class="o">-&gt;</span><span class="na">setTipAfeIgv</span><span class="p">(</span><span class="s1">&#39;10&#39;</span><span class="p">)</span>
+<span class="hll">    <span class="o">-&gt;</span><span class="na">setTotalImpuestos</span><span class="p">(</span><span class="mf">18.00</span><span class="p">)</span>
+</span>    <span class="o">-&gt;</span><span class="na">setMtoValorVenta</span><span class="p">(</span><span class="mf">100.00</span><span class="p">)</span>
+    <span class="o">-&gt;</span><span class="na">setMtoValorUnitario</span><span class="p">(</span><span class="mf">50.00</span><span class="p">)</span>
+    <span class="o">-&gt;</span><span class="na">setMtoPrecioUnitario</span><span class="p">(</span><span class="mf">56.00</span><span class="p">);</span>
 
-$invoice-&gt;setDetails([$item])
-        -&gt;setLegends([$legend]);
+<span class="nv">$legend</span> <span class="o">=</span> <span class="p">(</span><span class="k">new</span> <span class="nx">Legend</span><span class="p">())</span>
+    <span class="o">-&gt;</span><span class="na">setCode</span><span class="p">(</span><span class="s1">&#39;1000&#39;</span><span class="p">)</span>
+    <span class="o">-&gt;</span><span class="na">setValue</span><span class="p">(</span><span class="s1">&#39;SON DOSCIENTOS TREINTA Y SEIS CON 00/100 SOLES&#39;</span><span class="p">);</span>
 
-$result = $see-&gt;send($invoice);
+<span class="nv">$invoice</span><span class="o">-&gt;</span><span class="na">setDetails</span><span class="p">([</span><span class="nv">$item</span><span class="p">])</span>
+        <span class="o">-&gt;</span><span class="na">setLegends</span><span class="p">([</span><span class="nv">$legend</span><span class="p">]);</span>
 
-if ($result-&gt;isSuccess()) {
-    echo $result-&gt;getCdrResponse()-&gt;getDescription();
-} else {
-    var_dump($result-&gt;getError());
-}</code></pre>
+<span class="nv">$result</span> <span class="o">=</span> <span class="nv">$see</span><span class="o">-&gt;</span><span class="na">send</span><span class="p">(</span><span class="nv">$invoice</span><span class="p">);</span>
+
+<span class="k">if</span> <span class="p">(</span><span class="nv">$result</span><span class="o">-&gt;</span><span class="na">isSuccess</span><span class="p">())</span> <span class="p">{</span>
+    <span class="k">echo</span> <span class="nv">$result</span><span class="o">-&gt;</span><span class="na">getCdrResponse</span><span class="p">()</span><span class="o">-&gt;</span><span class="na">getDescription</span><span class="p">();</span>
+<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+    <span class="nb">var_dump</span><span class="p">(</span><span class="nv">$result</span><span class="o">-&gt;</span><span class="na">getError</span><span class="p">());</span>
+<span class="p">}</span>
+</pre></div>
 
 
 <p>Estructura del proyecto</p>
-<pre class="code"><code class="language-text">/
+<div class="codehilite"><pre><span></span>/
 ├── vendor/
 ├── certificate.pem
 ├── composer.json
 ├── config.php
-├── factura.php</code></pre>
+├── factura.php
+</pre></div>
 
 
 <h2 id="ejecutar">Ejecutar<a class="headerlink" href="#ejecutar" title="Permanent link">&para;</a></h2>
-<p>Finalmente invocaremos el script desde la linea de comandos (cmd, bash).</p>
-<pre class="code"><code class="language-bash">php factura.php</code></pre>
+<p>Finalmente ejecutaremos el script desde la linea de comandos.</p>
+<div class="codehilite"><pre><span></span>php factura.php
+</pre></div>
 
 
-<p>y si todo sale bien obtendremos como respuesta.</p>
-<pre class="code"><code class="language-bash">La Factura numero F001-1, ha sido aceptada</code></pre>
-
-
-<p>El código fuente puede encontrarlo en este <a href="https://github.com/giansalex/greenter-fiststeps">enlace</a>.</p>
+<p>y si todo sale bien obtendremos como respuesta.  </p>
+<div class="admonition success">
+<p class="admonition-title">Exito!</p>
+<p>La Factura numero F001-1, ha sido aceptada</p>
+</div>
+<p>Esta ejemplo puede encontrarlo en <a href="https://github.com/giansalex/greenter-firststeps">@giansalex/greenter-firststeps</a>.</p>
 <p><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=WSYJNMDD6D79W"><img alt="paypal" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" /></a></p>
                 
                   
@@ -686,10 +798,6 @@ if ($result-&gt;isSuccess()) {
         
       
       <script>app.initialize({version:"0.17.2",url:{base:".."}})</script>
-      
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.10.0/prism.min.js"></script>
-      
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.10.0/components/prism-php.min.js"></script>
       
         <script src="../js/ext_link.js"></script>
       
