@@ -2,18 +2,23 @@
     "docs": [
         {
             "location": "/",
-            "text": "Greenter\n\n\n\n\n\n\n\n\n\n\n\n\n   \n\nPHP Implementaci\u00f3n de la Facturaci\u00f3n Electr\u00f3nica en Per\u00fa, rigi\u00e9ndose en el est\u00e1ndar UBL versi\u00f3n 2.0 y 2.1   \n\n\n\n  \n\n\n\n\n\n\n\nAPI REST empleando Greenter\n\n\nPara usuarios finales, puede hacer uso de \nLycet\n. \n\n\n\n\nInstall\n\n\ncomposer require greenter/greenter\n\n\n\n\n\nPara propositos de prueba, visite \nGreenter Sample\n.\n\n\nCaracteristicas\n\n\nSupported Documents\n\n\n\n\nFactura Electr\u00f3nica\n\n\nBoleta Electr\u00f3nica\n\n\nNota de Cr\u00e9dito Electr\u00f3nica\n\n\nNota de D\u00e9bito Electr\u00f3nica\n\n\nResumen Diario de Boletas\n\n\nComunicaci\u00f3n de Bajas\n\n\nGuia Remisi\u00f3n Electr\u00f3nica\n\n\nRetenci\u00f3n Electr\u00f3nica\n\n\nPercepci\u00f3n Electr\u00f3nica\n\n\nResumen de Reversiones\n\n\n\n\n\n\nWeb Services\n\n\n\n\nEnvio y empaquetado de los documentos electr\u00f3nicos\n\n\nConsulta de tickets\n\n\nConsulta de Cdr\n\n\n\n\nXML\n\n\n\n\nEstandar UBL v2.0, v2.1\n\n\nSignature xmldsig\n\n\n\n\nRepresentaci\u00f3n Impresa.\n\n\n\n\nGeneraci\u00f3n de \nHTML Report\n\n\nGeneraci\u00f3n de \nPDF\n\n\n\n\nPaquetes usados\n\n\n\n\ngreenter/core\n\n\ngreenter/xml\n\n\ngreenter/ws\n\n\ngreenter/xmldsig\n\n\n\n\nOtras Paquetes de inter\u00e9s\n\n\n\n\ngreenter/report\n\n\ngreenter/htmltopdf\n\n\ngreenter/validation",
+            "text": "Greenter\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nEsta libreria le permite realizar la implementaci\u00f3n de la \nFacturaci\u00f3n Electr\u00f3nica\n en Per\u00fa, desde los sistemas desarrollados por el \ncontribuyente, la cual esta normado por SUNAT. \n\nGreenter realiza la mayoria de tareas del proceso, genera el XML seg\u00fan el est\u00e1ndar UBL, firma con el certificado digital que sunat exige,\ncomprime el archivo XML en formato zip, conexi\u00f3n al webservice de SUNAT y procesa el CDR (Comprobante de Recepci\u00f3n).\n\n\n\n  \n\n\n\n\n\n\n\nAPI REST\n\n\nPuede hacer uso de \nLycet\n, un API REST basado en Greenter.\n\n\n\n\nRequerimientos\n\n\n\n\nPHP 5.6 o superior\n\n\nExtensiones PHP Activadas: \nsoap\n, \ndom\n, \nzip\n, \nzlib\n, \nopenssl\n.\n\n\n\n\nInstalaci\u00f3n\n\n\nInstala \nComposer\n y ejecuta el siguiente comando para obtener la \u00faltima versi\u00f3n:\n\n\ncomposer require greenter/greenter\n\n\n\n\n\nPuede ver una demostraci\u00f3n en \ngiansalex/greenter-sample\n.\n\n\nCaracteristicas\n\n\nComprobantes Soportados\n\n\n\n\nFactura Electr\u00f3nica\n\n\nBoleta Electr\u00f3nica\n\n\nNota de Cr\u00e9dito Electr\u00f3nica\n\n\nNota de D\u00e9bito Electr\u00f3nica\n\n\nResumen Diario de Boletas\n\n\nComunicaci\u00f3n de Bajas\n\n\nGuia Remisi\u00f3n Electr\u00f3nica\n\n\nRetenci\u00f3n Electr\u00f3nica\n\n\nPercepci\u00f3n Electr\u00f3nica\n\n\nResumen de Reversiones\n\n\n\n\nDetalles\n\n\n\n\nXML est\u00e1ndar \nUBL v2.0, v2.1\n\n\nConsulta de tickets\n\n\nConsulta de CDR\n\n\n\n\nContribuci\u00f3n\n\n\nSi\u00e9ntase en la libertad de hacer un fork de los diferentes repositorios, corregir o aportar mejoras, todo pull request ser\u00e1 bienvenido.\n\n\nNotas de Interes\n\n\nRepresentaci\u00f3n Impresa\n\n\n\n\nGeneraci\u00f3n de \nHTML Report\n\n\nGeneraci\u00f3n de \nPDF\n\n\n\n\nTools\n\n\n\n\nUBL Validator\n \n\n\n\n\n\nTambi\u00e9n puede contactarse v\u00eda correo.",
             "title": "Greenter"
         },
         {
             "location": "/#greenter",
-            "text": "PHP Implementaci\u00f3n de la Facturaci\u00f3n Electr\u00f3nica en Per\u00fa, rigi\u00e9ndose en el est\u00e1ndar UBL versi\u00f3n 2.0 y 2.1     \n      API REST empleando Greenter  Para usuarios finales, puede hacer uso de  Lycet .",
+            "text": "Esta libreria le permite realizar la implementaci\u00f3n de la  Facturaci\u00f3n Electr\u00f3nica  en Per\u00fa, desde los sistemas desarrollados por el \ncontribuyente, la cual esta normado por SUNAT.  \nGreenter realiza la mayoria de tareas del proceso, genera el XML seg\u00fan el est\u00e1ndar UBL, firma con el certificado digital que sunat exige,\ncomprime el archivo XML en formato zip, conexi\u00f3n al webservice de SUNAT y procesa el CDR (Comprobante de Recepci\u00f3n).  \n      API REST  Puede hacer uso de  Lycet , un API REST basado en Greenter.",
             "title": "Greenter"
         },
         {
-            "location": "/#install",
-            "text": "composer require greenter/greenter  Para propositos de prueba, visite  Greenter Sample .",
-            "title": "Install"
+            "location": "/#requerimientos",
+            "text": "PHP 5.6 o superior  Extensiones PHP Activadas:  soap ,  dom ,  zip ,  zlib ,  openssl .",
+            "title": "Requerimientos"
+        },
+        {
+            "location": "/#instalacion",
+            "text": "Instala  Composer  y ejecuta el siguiente comando para obtener la \u00faltima versi\u00f3n:  composer require greenter/greenter  Puede ver una demostraci\u00f3n en  giansalex/greenter-sample .",
+            "title": "Instalaci\u00f3n"
         },
         {
             "location": "/#caracteristicas",
@@ -21,38 +26,38 @@
             "title": "Caracteristicas"
         },
         {
-            "location": "/#supported-documents",
+            "location": "/#comprobantes-soportados",
             "text": "Factura Electr\u00f3nica  Boleta Electr\u00f3nica  Nota de Cr\u00e9dito Electr\u00f3nica  Nota de D\u00e9bito Electr\u00f3nica  Resumen Diario de Boletas  Comunicaci\u00f3n de Bajas  Guia Remisi\u00f3n Electr\u00f3nica  Retenci\u00f3n Electr\u00f3nica  Percepci\u00f3n Electr\u00f3nica  Resumen de Reversiones",
-            "title": "Supported Documents"
+            "title": "Comprobantes Soportados"
         },
         {
-            "location": "/#web-services",
-            "text": "Envio y empaquetado de los documentos electr\u00f3nicos  Consulta de tickets  Consulta de Cdr",
-            "title": "Web Services"
+            "location": "/#detalles",
+            "text": "XML est\u00e1ndar  UBL v2.0, v2.1  Consulta de tickets  Consulta de CDR",
+            "title": "Detalles"
         },
         {
-            "location": "/#xml",
-            "text": "Estandar UBL v2.0, v2.1  Signature xmldsig",
-            "title": "XML"
+            "location": "/#contribucion",
+            "text": "Si\u00e9ntase en la libertad de hacer un fork de los diferentes repositorios, corregir o aportar mejoras, todo pull request ser\u00e1 bienvenido.",
+            "title": "Contribuci\u00f3n"
+        },
+        {
+            "location": "/#notas-de-interes",
+            "text": "",
+            "title": "Notas de Interes"
         },
         {
             "location": "/#representacion-impresa",
             "text": "Generaci\u00f3n de  HTML Report  Generaci\u00f3n de  PDF",
-            "title": "Representaci\u00f3n Impresa."
+            "title": "Representaci\u00f3n Impresa"
         },
         {
-            "location": "/#paquetes-usados",
-            "text": "greenter/core  greenter/xml  greenter/ws  greenter/xmldsig",
-            "title": "Paquetes usados"
-        },
-        {
-            "location": "/#otras-paquetes-de-interes",
-            "text": "greenter/report  greenter/htmltopdf  greenter/validation",
-            "title": "Otras Paquetes de inter\u00e9s"
+            "location": "/#tools",
+            "text": "UBL Validator     \nTambi\u00e9n puede contactarse v\u00eda correo.",
+            "title": "Tools"
         },
         {
             "location": "/starter/",
-            "text": "Empezando con Greenter\n\n\nDespu\u00e9s de \ninstalar greenter\n podr\u00e1 empezar a emitir comprobantes electr\u00f3nicos.\n\nPara este ejemplo se usar\u00e1 la version \nUBL 2.1\n.\n\n\n\n\nLas l\u00ednas resaltadas en el c\u00f3digo son los nuevos campos requeridos en el UBL 2.1\n\n\n\n\nRequerimientos\n\n\n\n\nCertificado en formato PEM\n\n\nCredenciales Clave SOL\n\n\n\n\nConfiguraci\u00f3n\n\n\nPara prop\u00f3sitos de prueba, descargaremos este \ncertificado\n y utilizaremos las\ncredenciales por defecto, user \n20000000001MODDATOS\n, password \nmoddatos\n.\n\n\n\n\nCertificado .PFX\n\n\nSi cuenta con un certificado .PFX, para convertirlo a formato .PEM necesita\nla clave y seguir el siguiente \nejemplo\n\n\n\n\nCrearemos el archivo \nconfig.php\n y agregaremos lo siguiente:\n\n\n?php\n\n\nuse\n \nGreenter\\Ws\\Services\\SunatEndpoints\n;\n\n\n\n$see\n \n=\n \nnew\n \n\\Greenter\\See\n();\n\n\n$see\n-\nsetService\n(\nSunatEndpoints\n::\nFE_BETA\n);\n\n\n$see\n-\nsetCertificate\n(\nfile_get_contents\n(\n__DIR__\n.\n/certificate.pem\n));\n\n\n$see\n-\nsetCredentials\n(\n20000000001MODDATOS\n,\n \nmoddatos\n);\n\n\n\nreturn\n \n$see\n;\n\n\n\n\n\n\nFactura Electr\u00f3nica\n\n\nElaboraremos nuestra primera factura electr\u00f3nica, para ello creamos el archivo \nfactura.php\n y agregaremos el siguiente c\u00f3digo:\n\n\n?php\n\n\n\nuse\n \nGreenter\\Model\\Client\\Client\n;\n\n\nuse\n \nGreenter\\Model\\Company\\Company\n;\n\n\nuse\n \nGreenter\\Model\\Company\\Address\n;\n\n\nuse\n \nGreenter\\Model\\Sale\\Invoice\n;\n\n\nuse\n \nGreenter\\Model\\Sale\\SaleDetail\n;\n\n\nuse\n \nGreenter\\Model\\Sale\\Legend\n;\n\n\n\nrequire\n \n__DIR__\n.\n/vendor/autoload.php\n;\n\n\n\n$see\n \n=\n \nrequire\n \n__DIR__\n.\n/config.php\n;\n\n\n\n// Cliente\n\n\n$client\n \n=\n \nnew\n \nClient\n();\n\n\n$client\n-\nsetTipoDoc\n(\n6\n)\n\n    \n-\nsetNumDoc\n(\n20000000001\n)\n\n    \n-\nsetRznSocial\n(\nEMPRESA 1\n);\n\n\n\n// Emisor\n\n\n$address\n \n=\n \nnew\n \nAddress\n();\n\n\n$address\n-\nsetUbigueo\n(\n150101\n)\n\n    \n-\nsetDepartamento\n(\nLIMA\n)\n\n    \n-\nsetProvincia\n(\nLIMA\n)\n\n    \n-\nsetDistrito\n(\nLIMA\n)\n\n    \n-\nsetUrbanizacion\n(\nNONE\n)\n\n    \n-\nsetDireccion\n(\nAV LS\n);\n\n\n\n$company\n \n=\n \nnew\n \nCompany\n();\n\n\n$company\n-\nsetRuc\n(\n20000000001\n)\n\n    \n-\nsetRazonSocial\n(\nEMPRESA SAC\n)\n\n    \n-\nsetNombreComercial\n(\nEMPRESA\n)\n\n    \n-\nsetAddress\n(\n$address\n);\n\n\n\n// Venta\n\n\n$invoice\n \n=\n \n(\nnew\n \nInvoice\n())\n\n\n    \n-\nsetUblVersion\n(\n2.1\n)\n\n\n    \n-\nsetTipoOperacion\n(\n0101\n)\n \n// Catalog. 51\n\n\n    \n-\nsetTipoDoc\n(\n01\n)\n\n    \n-\nsetSerie\n(\nF001\n)\n\n    \n-\nsetCorrelativo\n(\n1\n)\n\n    \n-\nsetFechaEmision\n(\nnew\n \nDateTime\n())\n\n    \n-\nsetTipoMoneda\n(\nPEN\n)\n\n    \n-\nsetClient\n(\n$client\n)\n\n    \n-\nsetMtoOperGravadas\n(\n100.00\n)\n\n    \n-\nsetMtoIGV\n(\n18.00\n)\n\n\n    \n-\nsetTotalImpuestos\n(\n18.00\n)\n\n\n    \n-\nsetValorVenta\n(\n100.00\n)\n\n\n    \n-\nsetMtoImpVenta\n(\n118.00\n)\n\n    \n-\nsetCompany\n(\n$company\n);\n\n\n\n$item\n \n=\n \n(\nnew\n \nSaleDetail\n())\n\n    \n-\nsetCodProducto\n(\nP001\n)\n\n    \n-\nsetUnidad\n(\nNIU\n)\n\n    \n-\nsetCantidad\n(\n2\n)\n\n    \n-\nsetDescripcion\n(\nPRODUCTO 1\n)\n\n\n    \n-\nsetMtoBaseIgv\n(\n100\n)\n\n\n    \n-\nsetPorcentajeIgv\n(\n18.00\n)\n \n// 18%\n\n\n    \n-\nsetIgv\n(\n18.00\n)\n\n    \n-\nsetTipAfeIgv\n(\n10\n)\n\n\n    \n-\nsetTotalImpuestos\n(\n18.00\n)\n\n\n    \n-\nsetMtoValorVenta\n(\n100.00\n)\n\n    \n-\nsetMtoValorUnitario\n(\n50.00\n)\n\n    \n-\nsetMtoPrecioUnitario\n(\n56.00\n);\n\n\n\n$legend\n \n=\n \n(\nnew\n \nLegend\n())\n\n    \n-\nsetCode\n(\n1000\n)\n\n    \n-\nsetValue\n(\nSON DOSCIENTOS TREINTA Y SEIS CON 00/100 SOLES\n);\n\n\n\n$invoice\n-\nsetDetails\n([\n$item\n])\n\n        \n-\nsetLegends\n([\n$legend\n]);\n\n\n\n$result\n \n=\n \n$see\n-\nsend\n(\n$invoice\n);\n\n\n\nif\n \n(\n$result\n-\nisSuccess\n())\n \n{\n\n    \necho\n \n$result\n-\ngetCdrResponse\n()\n-\ngetDescription\n();\n\n\n}\n \nelse\n \n{\n\n    \nvar_dump\n(\n$result\n-\ngetError\n());\n\n\n}\n\n\n\n\n\n\nEstructura del proyecto\n\n\n/\n\u251c\u2500\u2500 vendor/\n\u251c\u2500\u2500 certificate.pem\n\u251c\u2500\u2500 composer.json\n\u251c\u2500\u2500 config.php\n\u251c\u2500\u2500 factura.php\n\n\n\n\n\nEjecutar\n\n\nFinalmente ejecutaremos el script desde la linea de comandos.\n\n\nphp factura.php\n\n\n\n\n\ny si todo sale bien obtendremos como respuesta.  \n\n\n\n\nExito!\n\n\nLa Factura numero F001-1, ha sido aceptada\n\n\n\n\nEsta ejemplo puede encontrarlo en \n@giansalex/greenter-firststeps\n.",
+            "text": "Empezando con Greenter\n\n\nDespu\u00e9s de \ninstalar greenter\n podr\u00e1 empezar a emitir comprobantes electr\u00f3nicos.\n\nPara este ejemplo se usar\u00e1 la version \nUBL 2.1\n.\n\n\n\n\nLas l\u00ednas resaltadas en el c\u00f3digo son los nuevos campos requeridos en el UBL 2.1\n\n\n\n\nRequerimientos\n\n\n\n\nConocimientos en el proceso de Facturaci\u00f3n Electr\u00f3nica, puede revisar la \np\u00e1gina web\n creada por Sunat\n\n\nCertificado en formato PEM\n\n\nCredenciales Clave SOL\n\n\n\n\nConfiguraci\u00f3n\n\n\nPara prop\u00f3sitos de prueba, descargaremos este \ncertificado\n y utilizaremos las\ncredenciales por defecto, user \n20000000001MODDATOS\n, password \nmoddatos\n.\n\n\n\n\nCertificado .PFX\n\n\nSi cuenta con un certificado .PFX, para convertirlo a formato .PEM necesita\nla clave y seguir el siguiente \nejemplo\n\n\n\n\nCrearemos el archivo \nconfig.php\n y agregaremos lo siguiente:\n\n\n?php\n\n\nuse\n \nGreenter\\Ws\\Services\\SunatEndpoints\n;\n\n\n\n$see\n \n=\n \nnew\n \n\\Greenter\\See\n();\n\n\n$see\n-\nsetService\n(\nSunatEndpoints\n::\nFE_BETA\n);\n\n\n$see\n-\nsetCertificate\n(\nfile_get_contents\n(\n__DIR__\n.\n/certificate.pem\n));\n\n\n$see\n-\nsetCredentials\n(\n20000000001MODDATOS\n,\n \nmoddatos\n);\n\n\n\nreturn\n \n$see\n;\n\n\n\n\n\n\nFactura Electr\u00f3nica\n\n\nElaboraremos nuestra primera factura electr\u00f3nica, para ello creamos el archivo \nfactura.php\n y agregaremos el siguiente c\u00f3digo:\n\n\n?php\n\n\n\nuse\n \nGreenter\\Model\\Client\\Client\n;\n\n\nuse\n \nGreenter\\Model\\Company\\Company\n;\n\n\nuse\n \nGreenter\\Model\\Company\\Address\n;\n\n\nuse\n \nGreenter\\Model\\Sale\\Invoice\n;\n\n\nuse\n \nGreenter\\Model\\Sale\\SaleDetail\n;\n\n\nuse\n \nGreenter\\Model\\Sale\\Legend\n;\n\n\n\nrequire\n \n__DIR__\n.\n/vendor/autoload.php\n;\n\n\n\n$see\n \n=\n \nrequire\n \n__DIR__\n.\n/config.php\n;\n\n\n\n// Cliente\n\n\n$client\n \n=\n \nnew\n \nClient\n();\n\n\n$client\n-\nsetTipoDoc\n(\n6\n)\n\n    \n-\nsetNumDoc\n(\n20000000001\n)\n\n    \n-\nsetRznSocial\n(\nEMPRESA 1\n);\n\n\n\n// Emisor\n\n\n$address\n \n=\n \nnew\n \nAddress\n();\n\n\n$address\n-\nsetUbigueo\n(\n150101\n)\n\n    \n-\nsetDepartamento\n(\nLIMA\n)\n\n    \n-\nsetProvincia\n(\nLIMA\n)\n\n    \n-\nsetDistrito\n(\nLIMA\n)\n\n    \n-\nsetUrbanizacion\n(\nNONE\n)\n\n    \n-\nsetDireccion\n(\nAV LS\n);\n\n\n\n$company\n \n=\n \nnew\n \nCompany\n();\n\n\n$company\n-\nsetRuc\n(\n20000000001\n)\n\n    \n-\nsetRazonSocial\n(\nEMPRESA SAC\n)\n\n    \n-\nsetNombreComercial\n(\nEMPRESA\n)\n\n    \n-\nsetAddress\n(\n$address\n);\n\n\n\n// Venta\n\n\n$invoice\n \n=\n \n(\nnew\n \nInvoice\n())\n\n\n    \n-\nsetUblVersion\n(\n2.1\n)\n\n\n    \n-\nsetTipoOperacion\n(\n0101\n)\n \n// Catalog. 51\n\n\n    \n-\nsetTipoDoc\n(\n01\n)\n\n    \n-\nsetSerie\n(\nF001\n)\n\n    \n-\nsetCorrelativo\n(\n1\n)\n\n    \n-\nsetFechaEmision\n(\nnew\n \nDateTime\n())\n\n    \n-\nsetTipoMoneda\n(\nPEN\n)\n\n    \n-\nsetClient\n(\n$client\n)\n\n    \n-\nsetMtoOperGravadas\n(\n100.00\n)\n\n    \n-\nsetMtoIGV\n(\n18.00\n)\n\n\n    \n-\nsetTotalImpuestos\n(\n18.00\n)\n\n\n    \n-\nsetValorVenta\n(\n100.00\n)\n\n\n    \n-\nsetMtoImpVenta\n(\n118.00\n)\n\n    \n-\nsetCompany\n(\n$company\n);\n\n\n\n$item\n \n=\n \n(\nnew\n \nSaleDetail\n())\n\n    \n-\nsetCodProducto\n(\nP001\n)\n\n    \n-\nsetUnidad\n(\nNIU\n)\n\n    \n-\nsetCantidad\n(\n2\n)\n\n    \n-\nsetDescripcion\n(\nPRODUCTO 1\n)\n\n\n    \n-\nsetMtoBaseIgv\n(\n100\n)\n\n\n    \n-\nsetPorcentajeIgv\n(\n18.00\n)\n \n// 18%\n\n\n    \n-\nsetIgv\n(\n18.00\n)\n\n    \n-\nsetTipAfeIgv\n(\n10\n)\n\n\n    \n-\nsetTotalImpuestos\n(\n18.00\n)\n\n\n    \n-\nsetMtoValorVenta\n(\n100.00\n)\n\n    \n-\nsetMtoValorUnitario\n(\n50.00\n)\n\n    \n-\nsetMtoPrecioUnitario\n(\n56.00\n);\n\n\n\n$legend\n \n=\n \n(\nnew\n \nLegend\n())\n\n    \n-\nsetCode\n(\n1000\n)\n\n    \n-\nsetValue\n(\nSON DOSCIENTOS TREINTA Y SEIS CON 00/100 SOLES\n);\n\n\n\n$invoice\n-\nsetDetails\n([\n$item\n])\n\n        \n-\nsetLegends\n([\n$legend\n]);\n\n\n\n$result\n \n=\n \n$see\n-\nsend\n(\n$invoice\n);\n\n\n\nif\n \n(\n$result\n-\nisSuccess\n())\n \n{\n\n    \necho\n \n$result\n-\ngetCdrResponse\n()\n-\ngetDescription\n();\n\n\n}\n \nelse\n \n{\n\n    \nvar_dump\n(\n$result\n-\ngetError\n());\n\n\n}\n\n\n\n\n\n\nEstructura del proyecto\n\n\n/\n\u251c\u2500\u2500 vendor/\n\u251c\u2500\u2500 certificate.pem\n\u251c\u2500\u2500 composer.json\n\u251c\u2500\u2500 config.php\n\u251c\u2500\u2500 factura.php\n\n\n\n\n\nEjecutar\n\n\nFinalmente ejecutaremos el script desde la linea de comandos.\n\n\nphp factura.php\n\n\n\n\n\ny si todo sale bien obtendremos como respuesta.  \n\n\n\n\nExito!\n\n\nLa Factura numero F001-1, ha sido aceptada\n\n\n\n\nEsta ejemplo puede encontrarlo en \n@giansalex/greenter-firststeps\n.",
             "title": "Primeros Pasos"
         },
         {
@@ -62,7 +67,7 @@
         },
         {
             "location": "/starter/#requerimientos",
-            "text": "Certificado en formato PEM  Credenciales Clave SOL",
+            "text": "Conocimientos en el proceso de Facturaci\u00f3n Electr\u00f3nica, puede revisar la  p\u00e1gina web  creada por Sunat  Certificado en formato PEM  Credenciales Clave SOL",
             "title": "Requerimientos"
         },
         {
@@ -81,16 +86,6 @@
             "title": "Ejecutar"
         },
         {
-            "location": "/apidoc/",
-            "text": "Documentacion\n\n\nGo to \nApi Docs\n.",
-            "title": "Documentaci\u00f3n|https://giansalex.github.io/greenter-apidoc/"
-        },
-        {
-            "location": "/apidoc/#documentacion",
-            "text": "Go to  Api Docs .",
-            "title": "Documentacion"
-        },
-        {
             "location": "/migrate2.1/",
             "text": "Migrar a UBL 2.1\n\n\nEn el archivo \ncomposer.json\n, ajustar la version de \ngreenter/greenter\n a la version \n3.0\n.\n\n\n{\n\n    \nrequire\n:\n \n{\n\n        \ngreenter/greenter\n:\n \n^3.0\n\n    \n}\n\n\n}\n\n\n\n\n\n\nLuego ejecutar\n\n\ncomposer update greenter/greenter\n\n\n\n\n\nNuevos Campos\n\n\nEl principal cambio para indicar que el comprobante utilize \nUBL 2.1\n, es seteando el campo \nublVersion\n que existe en \nInvoice\n y \nNote\n.\n\n\n?php\n\n\nuse\n \nGreenter\\Model\\Sale\\Invoice\n;\n\n\nuse\n \nGreenter\\Model\\Sale\\Note\n;\n\n\n\n$invoice\n \n=\n \nnew\n \nInvoice\n();\n\n\n$invoice\n-\nsetUblVersion\n(\n2.1\n);\n\n\n\n\n// ....\n\n\n\n$note\n \n=\n \nnew\n \nNote\n();\n\n\n$note\n-\nsetUblVersion\n(\n2.1\n);\n\n\n\n\n// ...\n\n\n\n\n\n\nRevisar el changelog en \n@giansalex/greenter-core\n, para obtener m\u00e1s detalles.\n\n\n\n\nEjemplo\n\n\nEn el \nejemplo\n de primeros pasos, ver\u00e1 los nuevos campos resaltados en el c\u00f3digo.",
             "title": "Migrar a UBL 2.1"
@@ -104,6 +99,21 @@
             "location": "/migrate2.1/#nuevos-campos",
             "text": "El principal cambio para indicar que el comprobante utilize  UBL 2.1 , es seteando el campo  ublVersion  que existe en  Invoice  y  Note .  ?php  use   Greenter\\Model\\Sale\\Invoice ;  use   Greenter\\Model\\Sale\\Note ;  $invoice   =   new   Invoice ();  $invoice - setUblVersion ( 2.1 );   // ....  $note   =   new   Note ();  $note - setUblVersion ( 2.1 );   // ...   Revisar el changelog en  @giansalex/greenter-core , para obtener m\u00e1s detalles.   Ejemplo  En el  ejemplo  de primeros pasos, ver\u00e1 los nuevos campos resaltados en el c\u00f3digo.",
             "title": "Nuevos Campos"
+        },
+        {
+            "location": "/production/",
+            "text": "Greenter en Producci\u00f3n\n\n\nEn esta secci\u00f3n de indican los pasos para convertirse en Emisor Electr\u00f3nico.\n\n\n\n\nUBL 2.1\n\n\nApartir de \noctubre del 2018\n, los nuevos emisores electr\u00f3nicos estan obligados a emitir sus comprobantes\nempleando el est\u00e1ndar UBL 2.1 \n\n\n\n\nPasos\n\n\n\n\nCreaci\u00f3n de usuario secundario con los permisos para Facturaci\u00f3n Electr\u00f3nica.\n\n\nRegistrar el certificado digital en el portal de SUNAT, en formato \n.cer\n (Public key).\n\n\nGreenter requiere el certificado digital en formato \n.pem\n (Private \n Public Key), si tiene un certificado \n.pfx\n\n puede convertirlo siguiendo esta \ngu\u00eda\n.\n\n\nConfigurar la url del servicio de Producci\u00f3n.\n\n\n\n\n?php\n\n\nuse\n \nGreenter\\Ws\\Services\\SunatEndpoints\n;\n\n\n\n$see\n \n=\n \nnew\n \n\\Greenter\\See\n();\n\n\n$see\n-\nsetService\n(\nSunatEndpoints\n::\nFE_PRODUCCION\n);\n\n\n$see\n-\nsetCertificate\n(\nfile_get_contents\n(\n__DIR__\n.\n/valid-cer.pem\n));\n\n\n$see\n-\nsetCredentials\n(\n20000000001DNOMBLOI\n,\n \npsdlbmrt\n);\n \n// clave SOL\n\n\n\n\n\n\n\n\nUsuario Secundario\n\n\nDespues de crear el usuario secundario, tiene que esperar hasta un plazo de 24 horas para\nque este activo y pueda usarlo.",
+            "title": "Paso a Producci\u00f3n"
+        },
+        {
+            "location": "/production/#greenter-en-produccion",
+            "text": "En esta secci\u00f3n de indican los pasos para convertirse en Emisor Electr\u00f3nico.   UBL 2.1  Apartir de  octubre del 2018 , los nuevos emisores electr\u00f3nicos estan obligados a emitir sus comprobantes\nempleando el est\u00e1ndar UBL 2.1",
+            "title": "Greenter en Producci\u00f3n"
+        },
+        {
+            "location": "/production/#pasos",
+            "text": "Creaci\u00f3n de usuario secundario con los permisos para Facturaci\u00f3n Electr\u00f3nica.  Registrar el certificado digital en el portal de SUNAT, en formato  .cer  (Public key).  Greenter requiere el certificado digital en formato  .pem  (Private   Public Key), si tiene un certificado  .pfx \n puede convertirlo siguiendo esta  gu\u00eda .  Configurar la url del servicio de Producci\u00f3n.   ?php  use   Greenter\\Ws\\Services\\SunatEndpoints ;  $see   =   new   \\Greenter\\See ();  $see - setService ( SunatEndpoints :: FE_PRODUCCION );  $see - setCertificate ( file_get_contents ( __DIR__ . /valid-cer.pem ));  $see - setCredentials ( 20000000001DNOMBLOI ,   psdlbmrt );   // clave SOL    Usuario Secundario  Despues de crear el usuario secundario, tiene que esperar hasta un plazo de 24 horas para\nque este activo y pueda usarlo.",
+            "title": "Pasos"
         },
         {
             "location": "/examples/exonerada/",
@@ -196,14 +206,14 @@
             "title": "C\u00f3digo"
         },
         {
-            "location": "/news/",
-            "text": "Greenter News\n\n\nAqui se publicaran nuevas versiones y caracteristicas de Greenter.",
-            "title": "Start"
+            "location": "/apidoc/",
+            "text": "Documentacion\n\n\nGo to \nApi Docs\n.",
+            "title": "API Referencia|https://giansalex.github.io/greenter-apidoc/"
         },
         {
-            "location": "/news/#greenter-news",
-            "text": "Aqui se publicaran nuevas versiones y caracteristicas de Greenter.",
-            "title": "Greenter News"
+            "location": "/apidoc/#documentacion",
+            "text": "Go to  Api Docs .",
+            "title": "Documentacion"
         }
     ]
 }
