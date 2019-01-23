@@ -206,6 +206,31 @@
             "title": "C\u00f3digo"
         },
         {
+            "location": "/examples/contingencia/",
+            "text": "Contingencia\n\n\nExisten situaciones adversas por la que un emisor electr\u00f3nico no puede emitir comprobantes electronicos, en ese caso \nSUNAT les da la posibilidad de emitir un comprobante fisico, como anteriormente se realizaba.\n\n\nPara informar a SUNAT de estos comprobantes, a partir del \n01-09-2018\n se envi\u00e1 de la misma forma como se hace con\nlos comprobantes electr\u00f3nicos.\n\n\n\n\nLas boletas por contingencia se siguen enviando empleando el resumen diario de boletas.\n\n\n\n\nRepresentaci\u00f3n Impresa\n\n\nLa representaci\u00f3n impresa de los comprobantes de contingencia deben incluir algunas leyendas, el primero: \n\"Emisor electr\u00f3nico obligado\"\n y otra\ndependiendo del tipo de comprobante\n\n\n\n\n\n\n\n\nTipo documento\n\n\nLeyenda\n\n\n\n\n\n\n\n\n\n\nFactura y Boleta\n\n\n\"Comprobante de Pago emitido en contingencia\"\n\n\n\n\n\n\nNota de Cr\u00e9dito\n\n\n\"Nota de Cr\u00e9dito emitida en contingencia\"\n\n\n\n\n\n\nNota de D\u00e9bito\n\n\n\"Nota de D\u00e9dito emitida en contingencia\"\n\n\n\n\n\n\nC. de Retenci\u00f3n\n\n\n\"Comprobante de Retenci\u00f3n emitido en contingencia\"\n\n\n\n\n\n\nC. de Percepci\u00f3n\n\n\n\"Comprobante de Percepci\u00f3n emitido en contingencia\"\n\n\n\n\n\n\n\n\nFactura Electr\u00f3nica\n\n\nEl cambio con respecto a la emision normal de un comprobante electr\u00f3nico es la serie, que es num\u00e9rica.\n\n\n?php\n\n\n//...\n\n\n\n$invoice\n-\nsetSerie\n(\n0001\n);\n\n\n\n//...\n\n\n\n\n\n\nReferencia\n\n\nProcedimiento de contingencia - SUNAT",
+            "title": "Contingencia"
+        },
+        {
+            "location": "/examples/contingencia/#contingencia",
+            "text": "Existen situaciones adversas por la que un emisor electr\u00f3nico no puede emitir comprobantes electronicos, en ese caso \nSUNAT les da la posibilidad de emitir un comprobante fisico, como anteriormente se realizaba.  Para informar a SUNAT de estos comprobantes, a partir del  01-09-2018  se envi\u00e1 de la misma forma como se hace con\nlos comprobantes electr\u00f3nicos.   Las boletas por contingencia se siguen enviando empleando el resumen diario de boletas.",
+            "title": "Contingencia"
+        },
+        {
+            "location": "/examples/contingencia/#representacion-impresa",
+            "text": "La representaci\u00f3n impresa de los comprobantes de contingencia deben incluir algunas leyendas, el primero:  \"Emisor electr\u00f3nico obligado\"  y otra\ndependiendo del tipo de comprobante     Tipo documento  Leyenda      Factura y Boleta  \"Comprobante de Pago emitido en contingencia\"    Nota de Cr\u00e9dito  \"Nota de Cr\u00e9dito emitida en contingencia\"    Nota de D\u00e9bito  \"Nota de D\u00e9dito emitida en contingencia\"    C. de Retenci\u00f3n  \"Comprobante de Retenci\u00f3n emitido en contingencia\"    C. de Percepci\u00f3n  \"Comprobante de Percepci\u00f3n emitido en contingencia\"",
+            "title": "Representaci\u00f3n Impresa"
+        },
+        {
+            "location": "/examples/contingencia/#factura-electronica",
+            "text": "El cambio con respecto a la emision normal de un comprobante electr\u00f3nico es la serie, que es num\u00e9rica.  ?php  //...  $invoice - setSerie ( 0001 );  //...",
+            "title": "Factura Electr\u00f3nica"
+        },
+        {
+            "location": "/examples/contingencia/#referencia",
+            "text": "Procedimiento de contingencia - SUNAT",
+            "title": "Referencia"
+        },
+        {
             "location": "/apidoc/",
             "text": "Documentacion\n\n\nGo to \nApi Docs\n.",
             "title": "API Referencia|https://giansalex.github.io/greenter-apidoc/"
