@@ -13,7 +13,7 @@
         <meta name="description" content="Greenter - Facturación Electrónica en Perú - SUNAT, siguiendo el estándar UBL 2.0, 2.1">
       
       
-        <link rel="canonical" href="https://giansalex.github.io/greenter/examples/gratuita/">
+        <link rel="canonical" href="https://giansalex.github.io/greenter/examples/exportacion/">
       
       
         <meta name="author" content="Giancarlos Salas">
@@ -42,7 +42,7 @@
     
     
       
-        <title>F. Gratuita - Greenter - Facturación Electrónica en Perú</title>
+        <title>F. Exportación - Greenter - Facturación Electrónica en Perú</title>
       
     
     
@@ -135,7 +135,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#factura-gratuita" tabindex="1" class="md-skip">
+      <a href="#factura-exportacion" tabindex="1" class="md-skip">
         Saltar a contenido
       </a>
     
@@ -160,7 +160,7 @@
               Greenter - Facturación Electrónica en Perú
             </span>
             <span class="md-header-nav__topic">
-              F. Gratuita
+              F. Exportación
             </span>
           
         </div>
@@ -372,55 +372,11 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-      
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        F. Gratuita
-      </label>
-    
-    <a href="./" title="F. Gratuita" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../gratuita/" title="F. Gratuita" class="md-nav__link">
       F. Gratuita
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">Tabla de contenidos</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#codigo" title="Código" class="md-nav__link">
-    Código
-  </a>
-  
-</li>
-      
-      
-      
-      
-      
-        <li class="md-nav__item">
-          <a href="#__comments" title="Comentarios" class="md-nav__link md-nav__link--active">
-            Comentarios
-          </a>
-        </li>
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
     
@@ -476,11 +432,55 @@
       
       
 
+  
 
-  <li class="md-nav__item">
-    <a href="../exportacion/" title="F. Exportación" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        F. Exportación
+      </label>
+    
+    <a href="./" title="F. Exportación" class="md-nav__link md-nav__link--active">
       F. Exportación
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Tabla de contenidos</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#codigo" title="Código" class="md-nav__link">
+    Código
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+        <li class="md-nav__item">
+          <a href="#__comments" title="Comentarios" class="md-nav__link md-nav__link--active">
+            Comentarios
+          </a>
+        </li>
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
     
@@ -557,15 +557,17 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/giansalex/greenter/edit/master/docs/examples/gratuita.md" title="Editar esta página" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/giansalex/greenter/edit/master/docs/examples/exportacion.md" title="Editar esta página" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="factura-gratuita">Factura Gratuita<a class="headerlink" href="#factura-gratuita" title="Permanent link">&para;</a></h1>
+                <h1 id="factura-exportacion">Factura Exportación<a class="headerlink" href="#factura-exportacion" title="Permanent link">&para;</a></h1>
 <blockquote>
 <p>Las lineas resaltadas son propias de este modelo de factura.</p>
 </blockquote>
 <h2 id="codigo">Código<a class="headerlink" href="#codigo" title="Permanent link">&para;</a></h2>
 <div class="codehilite"><pre><span></span><span class="cp">&lt;?php</span>
+
+<span class="k">use</span> <span class="nx">Greenter\Model\Client\Client</span><span class="p">;</span>
 <span class="k">use</span> <span class="nx">Greenter\Model\Sale\Invoice</span><span class="p">;</span>
 <span class="k">use</span> <span class="nx">Greenter\Model\Sale\Legend</span><span class="p">;</span>
 <span class="k">use</span> <span class="nx">Greenter\Model\Sale\SaleDetail</span><span class="p">;</span>
@@ -573,42 +575,46 @@
 <span class="nv">$invoice</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Invoice</span><span class="p">();</span>
 <span class="nv">$invoice</span>
     <span class="o">-&gt;</span><span class="na">setUblVersion</span><span class="p">(</span><span class="s1">&#39;2.1&#39;</span><span class="p">)</span>
-    <span class="o">-&gt;</span><span class="na">setTipoOperacion</span><span class="p">(</span><span class="s1">&#39;0101&#39;</span><span class="p">)</span>
-    <span class="o">-&gt;</span><span class="na">setTipoDoc</span><span class="p">(</span><span class="s1">&#39;01&#39;</span><span class="p">)</span>
+<span class="hll">    <span class="o">-&gt;</span><span class="na">setTipoOperacion</span><span class="p">(</span><span class="s1">&#39;0200&#39;</span><span class="p">)</span> <span class="c1">// Tipo Operacion: exportaction</span>
+</span>    <span class="o">-&gt;</span><span class="na">setTipoDoc</span><span class="p">(</span><span class="s1">&#39;01&#39;</span><span class="p">)</span>
     <span class="o">-&gt;</span><span class="na">setSerie</span><span class="p">(</span><span class="s1">&#39;F001&#39;</span><span class="p">)</span>
     <span class="o">-&gt;</span><span class="na">setCorrelativo</span><span class="p">(</span><span class="s1">&#39;123&#39;</span><span class="p">)</span>
     <span class="o">-&gt;</span><span class="na">setFechaEmision</span><span class="p">(</span><span class="k">new</span> <span class="nx">\DateTime</span><span class="p">())</span>
-    <span class="o">-&gt;</span><span class="na">setTipoMoneda</span><span class="p">(</span><span class="s1">&#39;PEN&#39;</span><span class="p">)</span>
-    <span class="o">-&gt;</span><span class="na">setClient</span><span class="p">(</span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">getClient</span><span class="p">())</span>
+    <span class="o">-&gt;</span><span class="na">setTipoMoneda</span><span class="p">(</span><span class="s1">&#39;USD&#39;</span><span class="p">)</span>
     <span class="o">-&gt;</span><span class="na">setCompany</span><span class="p">(</span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">getCompany</span><span class="p">())</span>
-<span class="hll">    <span class="o">-&gt;</span><span class="na">setMtoOperGratuitas</span><span class="p">(</span><span class="mi">200</span><span class="p">)</span>
+<span class="hll">    <span class="o">-&gt;</span><span class="na">setClient</span><span class="p">((</span><span class="k">new</span> <span class="nx">Client</span><span class="p">())</span> <span class="c1">// Cliente: extranjeria o sin documentos</span>
+</span><span class="hll">        <span class="o">-&gt;</span><span class="na">setTipoDoc</span><span class="p">(</span><span class="s1">&#39;0&#39;</span><span class="p">)</span>
+</span><span class="hll">        <span class="o">-&gt;</span><span class="na">setNumDoc</span><span class="p">(</span><span class="s1">&#39;-&#39;</span><span class="p">)</span>
+</span><span class="hll">        <span class="o">-&gt;</span><span class="na">setRznSocial</span><span class="p">(</span><span class="s1">&#39;EXTRANJERO&#39;</span><span class="p">)</span>
+</span>    <span class="p">)</span>
+<span class="hll">    <span class="o">-&gt;</span><span class="na">setMtoOperExportacion</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
 </span>    <span class="o">-&gt;</span><span class="na">setMtoIGV</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
     <span class="o">-&gt;</span><span class="na">setTotalImpuestos</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
-    <span class="o">-&gt;</span><span class="na">setValorVenta</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
-    <span class="o">-&gt;</span><span class="na">setMtoImpVenta</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+    <span class="o">-&gt;</span><span class="na">setValorVenta</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
+    <span class="o">-&gt;</span><span class="na">setMtoImpVenta</span><span class="p">(</span><span class="mi">100</span><span class="p">);</span>
 
 <span class="nv">$detail</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">SaleDetail</span><span class="p">();</span>
 <span class="nv">$detail</span><span class="o">-&gt;</span><span class="na">setCodProducto</span><span class="p">(</span><span class="s1">&#39;P001&#39;</span><span class="p">)</span>
-    <span class="o">-&gt;</span><span class="na">setUnidad</span><span class="p">(</span><span class="s1">&#39;NIU&#39;</span><span class="p">)</span>
+<span class="hll">    <span class="o">-&gt;</span><span class="na">setCodProdSunat</span><span class="p">(</span><span class="s1">&#39;10000000&#39;</span><span class="p">)</span> <span class="c1">// Codigo Producto Sunat, requerido.</span>
+</span>    <span class="o">-&gt;</span><span class="na">setUnidad</span><span class="p">(</span><span class="s1">&#39;KG&#39;</span><span class="p">)</span>
     <span class="o">-&gt;</span><span class="na">setDescripcion</span><span class="p">(</span><span class="s1">&#39;PROD 1&#39;</span><span class="p">)</span>
     <span class="o">-&gt;</span><span class="na">setCantidad</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
-    <span class="o">-&gt;</span><span class="na">setMtoValorUnitario</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
-<span class="hll">    <span class="o">-&gt;</span><span class="na">setMtoValorGratuito</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
-</span>    <span class="o">-&gt;</span><span class="na">setMtoValorVenta</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
-    <span class="o">-&gt;</span><span class="na">setMtoBaseIgv</span><span class="p">(</span><span class="mi">200</span><span class="p">)</span>
-    <span class="o">-&gt;</span><span class="na">setPorcentajeIgv</span><span class="p">(</span><span class="mi">18</span><span class="p">)</span>
-    <span class="o">-&gt;</span><span class="na">setIgv</span><span class="p">(</span><span class="mi">36</span><span class="p">)</span>
-<span class="hll">    <span class="o">-&gt;</span><span class="na">setTipAfeIgv</span><span class="p">(</span><span class="s1">&#39;11&#39;</span><span class="p">)</span>
-</span>    <span class="o">-&gt;</span><span class="na">setTotalImpuestos</span><span class="p">(</span><span class="mi">36</span><span class="p">)</span>
-    <span class="o">-&gt;</span><span class="na">setMtoPrecioUnitario</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+    <span class="o">-&gt;</span><span class="na">setMtoValorUnitario</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
+    <span class="o">-&gt;</span><span class="na">setMtoValorVenta</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
+    <span class="o">-&gt;</span><span class="na">setMtoBaseIgv</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
+    <span class="o">-&gt;</span><span class="na">setPorcentajeIgv</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+    <span class="o">-&gt;</span><span class="na">setIgv</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+<span class="hll">    <span class="o">-&gt;</span><span class="na">setTipAfeIgv</span><span class="p">(</span><span class="s1">&#39;40&#39;</span><span class="p">)</span>
+</span>    <span class="o">-&gt;</span><span class="na">setTotalImpuestos</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+    <span class="o">-&gt;</span><span class="na">setMtoPrecioUnitario</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
 <span class="p">;</span>
 
 <span class="nv">$invoice</span><span class="o">-&gt;</span><span class="na">setDetails</span><span class="p">([</span><span class="nv">$detail</span><span class="p">])</span>
     <span class="o">-&gt;</span><span class="na">setLegends</span><span class="p">([</span>
         <span class="p">(</span><span class="k">new</span> <span class="nx">Legend</span><span class="p">())</span>
-<span class="hll">            <span class="o">-&gt;</span><span class="na">setCode</span><span class="p">(</span><span class="s1">&#39;1002&#39;</span><span class="p">)</span>
-</span><span class="hll">            <span class="o">-&gt;</span><span class="na">setValue</span><span class="p">(</span><span class="s1">&#39;TRANSFERENCIA GRATUITA DE UN BIEN Y/O SERVICIO PRESTADO GRATUITAMENTE&#39;</span><span class="p">)</span>
-</span>    <span class="p">]);</span>
+            <span class="o">-&gt;</span><span class="na">setCode</span><span class="p">(</span><span class="s1">&#39;1000&#39;</span><span class="p">)</span>
+            <span class="o">-&gt;</span><span class="na">setValue</span><span class="p">(</span><span class="s1">&#39;SON CIEN CON OO/100 SOLES&#39;</span><span class="p">)</span>
+    <span class="p">]);</span>
 </pre></div>
                 
                   
@@ -622,9 +628,9 @@
   <div id="disqus_thread"></div>
   <script>
     var disqus_config = function () {
-      this.page.url = "https://giansalex.github.io/greenter/examples/gratuita/";
+      this.page.url = "https://giansalex.github.io/greenter/examples/exportacion/";
       this.page.identifier =
-        "/examples/gratuita/";
+        "/examples/exportacion/";
     };
     (function() {
       var d = document, s = d.createElement("script");
@@ -646,7 +652,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../exonerada/" title="F. Exonerada" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../detraccion/" title="F. Detracción" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -655,19 +661,19 @@
                 <span class="md-footer-nav__direction">
                   Anterior
                 </span>
-                F. Exonerada
+                F. Detracción
               </span>
             </div>
           </a>
         
         
-          <a href="../descuento-linea/" title="F. Descuentos" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../contingencia/" title="Contingencia" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Siguiente
                 </span>
-                F. Descuentos
+                Contingencia
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
