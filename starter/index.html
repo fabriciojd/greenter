@@ -625,8 +625,9 @@ la clave y seguir el siguiente <a href="https://github.com/giansalex/xmldsig/blo
 <p>Crearemos el archivo <code>config.php</code> y agregaremos lo siguiente:</p>
 <div class="codehilite"><pre><span></span><span class="cp">&lt;?php</span>
 <span class="k">use</span> <span class="nx">Greenter\Ws\Services\SunatEndpoints</span><span class="p">;</span>
+<span class="k">use</span> <span class="nx">Greenter\See</span><span class="p">;</span>
 
-<span class="nv">$see</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">\Greenter\See</span><span class="p">();</span>
+<span class="nv">$see</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">See</span><span class="p">();</span>
 <span class="nv">$see</span><span class="o">-&gt;</span><span class="na">setService</span><span class="p">(</span><span class="nx">SunatEndpoints</span><span class="o">::</span><span class="na">FE_BETA</span><span class="p">);</span>
 <span class="nv">$see</span><span class="o">-&gt;</span><span class="na">setCertificate</span><span class="p">(</span><span class="nb">file_get_contents</span><span class="p">(</span><span class="no">__DIR__</span><span class="o">.</span><span class="s1">&#39;/certificate.pem&#39;</span><span class="p">));</span>
 <span class="nv">$see</span><span class="o">-&gt;</span><span class="na">setCredentials</span><span class="p">(</span><span class="s1">&#39;20000000001MODDATOS&#39;</span><span class="p">,</span> <span class="s1">&#39;moddatos&#39;</span><span class="p">);</span>
@@ -700,7 +701,7 @@ la clave y seguir el siguiente <a href="https://github.com/giansalex/xmldsig/blo
 <span class="hll">    <span class="o">-&gt;</span><span class="na">setTotalImpuestos</span><span class="p">(</span><span class="mf">18.00</span><span class="p">)</span>
 </span>    <span class="o">-&gt;</span><span class="na">setMtoValorVenta</span><span class="p">(</span><span class="mf">100.00</span><span class="p">)</span>
     <span class="o">-&gt;</span><span class="na">setMtoValorUnitario</span><span class="p">(</span><span class="mf">50.00</span><span class="p">)</span>
-    <span class="o">-&gt;</span><span class="na">setMtoPrecioUnitario</span><span class="p">(</span><span class="mf">56.00</span><span class="p">);</span>
+    <span class="o">-&gt;</span><span class="na">setMtoPrecioUnitario</span><span class="p">(</span><span class="mf">59.00</span><span class="p">);</span>
 
 <span class="nv">$legend</span> <span class="o">=</span> <span class="p">(</span><span class="k">new</span> <span class="nx">Legend</span><span class="p">())</span>
     <span class="o">-&gt;</span><span class="na">setCode</span><span class="p">(</span><span class="s1">&#39;1000&#39;</span><span class="p">)</span>
@@ -711,11 +712,17 @@ la clave y seguir el siguiente <a href="https://github.com/giansalex/xmldsig/blo
 
 <span class="nv">$result</span> <span class="o">=</span> <span class="nv">$see</span><span class="o">-&gt;</span><span class="na">send</span><span class="p">(</span><span class="nv">$invoice</span><span class="p">);</span>
 
-<span class="k">if</span> <span class="p">(</span><span class="nv">$result</span><span class="o">-&gt;</span><span class="na">isSuccess</span><span class="p">())</span> <span class="p">{</span>
-    <span class="k">echo</span> <span class="nv">$result</span><span class="o">-&gt;</span><span class="na">getCdrResponse</span><span class="p">()</span><span class="o">-&gt;</span><span class="na">getDescription</span><span class="p">();</span>
-<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+<span class="c1">// Guardar XML</span>
+<span class="nb">file_put_contents</span><span class="p">(</span><span class="nv">$invoice</span><span class="o">-&gt;</span><span class="na">getName</span><span class="p">()</span><span class="o">.</span><span class="s1">&#39;.xml&#39;</span><span class="p">,</span>
+                  <span class="nv">$see</span><span class="o">-&gt;</span><span class="na">getFactory</span><span class="p">()</span><span class="o">-&gt;</span><span class="na">getLastXml</span><span class="p">());</span>
+<span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nv">$result</span><span class="o">-&gt;</span><span class="na">isSuccess</span><span class="p">())</span> <span class="p">{</span>
     <span class="nb">var_dump</span><span class="p">(</span><span class="nv">$result</span><span class="o">-&gt;</span><span class="na">getError</span><span class="p">());</span>
+    <span class="k">exit</span><span class="p">();</span>
 <span class="p">}</span>
+
+<span class="k">echo</span> <span class="nv">$result</span><span class="o">-&gt;</span><span class="na">getCdrResponse</span><span class="p">()</span><span class="o">-&gt;</span><span class="na">getDescription</span><span class="p">();</span>
+<span class="c1">// Guardar CDR</span>
+<span class="nb">file_put_contents</span><span class="p">(</span><span class="s1">&#39;R-&#39;</span><span class="o">.</span><span class="nv">$invoice</span><span class="o">-&gt;</span><span class="na">getName</span><span class="p">()</span><span class="o">.</span><span class="s1">&#39;.zip&#39;</span><span class="p">,</span> <span class="nv">$result</span><span class="o">-&gt;</span><span class="na">getCdrZip</span><span class="p">());</span>
 </pre></div>
 
 
