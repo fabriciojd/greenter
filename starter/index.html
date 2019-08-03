@@ -265,6 +265,10 @@
       
         
       
+        
+      
+        
+      
     </ul>
   </div>
 </nav>
@@ -511,8 +515,32 @@
 
 
   <li class="md-nav__item">
+    <a href="../examples/boleta/" title="Boleta de Venta" class="md-nav__link">
+      Boleta de Venta
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
     <a href="../examples/contingencia/" title="Contingencia" class="md-nav__link">
       Contingencia
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../faq/" title="Preguntas Frecuentes" class="md-nav__link">
+      Preguntas Frecuentes
     </a>
   </li>
 
@@ -603,7 +631,7 @@
                 
                 
                 <h1 id="empezando-con-greenter">Empezando con Greenter<a class="headerlink" href="#empezando-con-greenter" title="Permanent link">&para;</a></h1>
-<p>Después de <a href="https://giansalex.github.io/greenter/#install">instalar greenter</a> podrá empezar a emitir comprobantes electrónicos.<br />
+<p>Después de <a href="/#instalacion">instalar greenter</a> podrá empezar a emitir comprobantes electrónicos.<br />
 Para este ejemplo se usará la version <strong>UBL 2.1</strong>.</p>
 <blockquote>
 <p>Las línas resaltadas en el código son los nuevos campos requeridos en el UBL 2.1</p>
@@ -622,20 +650,28 @@ credenciales por defecto, user <code>20000000001MODDATOS</code>, password <code>
 <p>Si cuenta con un certificado .PFX, para convertirlo a formato .PEM necesita
 la clave y seguir el siguiente <a href="https://github.com/giansalex/xmldsig/blob/master/CONVERT.md#convert-to-pem">ejemplo</a></p>
 </div>
-<p>Crearemos el archivo <code>config.php</code> y agregaremos lo siguiente:</p>
+<p>Crearemos el archivo <code>config.php</code> donde configuraremos la ruta del servicio, el certificado digital y las credenciales (Clave SOL) para conectarse al servicio:</p>
 <div class="codehilite"><pre><span></span><span class="cp">&lt;?php</span>
 <span class="k">use</span> <span class="nx">Greenter\Ws\Services\SunatEndpoints</span><span class="p">;</span>
 <span class="k">use</span> <span class="nx">Greenter\See</span><span class="p">;</span>
 
+<span class="c1">// CLAVE SOL utilizada.</span>
+<span class="c1">// Ruc: 20000000001</span>
+<span class="c1">// Usuario: MODDATOS</span>
+<span class="c1">// Contraseña: moddatos</span>
+
 <span class="nv">$see</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">See</span><span class="p">();</span>
 <span class="nv">$see</span><span class="o">-&gt;</span><span class="na">setService</span><span class="p">(</span><span class="nx">SunatEndpoints</span><span class="o">::</span><span class="na">FE_BETA</span><span class="p">);</span>
 <span class="nv">$see</span><span class="o">-&gt;</span><span class="na">setCertificate</span><span class="p">(</span><span class="nb">file_get_contents</span><span class="p">(</span><span class="no">__DIR__</span><span class="o">.</span><span class="s1">&#39;/certificate.pem&#39;</span><span class="p">));</span>
-<span class="nv">$see</span><span class="o">-&gt;</span><span class="na">setCredentials</span><span class="p">(</span><span class="s1">&#39;20000000001MODDATOS&#39;</span><span class="p">,</span> <span class="s1">&#39;moddatos&#39;</span><span class="p">);</span>
+<span class="nv">$see</span><span class="o">-&gt;</span><span class="na">setCredentials</span><span class="p">(</span><span class="s1">&#39;20000000001MODDATOS&#39;</span><span class="cm">/*ruc+usuario*/</span><span class="p">,</span> <span class="s1">&#39;moddatos&#39;</span><span class="p">);</span>
 
 <span class="k">return</span> <span class="nv">$see</span><span class="p">;</span>
 </pre></div>
 
 
+<blockquote>
+<p>En el ambiente de producción lo recomendable es crear un usuario secundario con solo permisos para comprobantes electrónicos.</p>
+</blockquote>
 <h2 id="factura-electronica">Factura Electrónica<a class="headerlink" href="#factura-electronica" title="Permanent link">&para;</a></h2>
 <p>Elaboraremos nuestra primera factura electrónica, para ello creamos el archivo <code>factura.php</code> y agregaremos el siguiente código:</p>
 <div class="codehilite"><pre><span></span><span class="cp">&lt;?php</span>
@@ -748,7 +784,7 @@ la clave y seguir el siguiente <a href="https://github.com/giansalex/xmldsig/blo
 <p>La Factura numero F001-1, ha sido aceptada</p>
 </div>
 <p>Esta ejemplo puede encontrarlo en <a href="https://github.com/giansalex/greenter-firststeps">@giansalex/greenter-firststeps</a>.</p>
-<p><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=WSYJNMDD6D79W"><img alt="paypal" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" /></a></p>
+<p><a href="https://paypal.me/giansalex"><img alt="paypal" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" /></a></p>
                 
                   
                 

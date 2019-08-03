@@ -13,7 +13,7 @@
         <meta name="description" content="Greenter - Facturación Electrónica en Perú - SUNAT, siguiendo el estándar UBL 2.0, 2.1">
       
       
-        <link rel="canonical" href="https://giansalex.github.io/greenter/examples/detraccion/">
+        <link rel="canonical" href="https://giansalex.github.io/greenter/examples/boleta/">
       
       
         <meta name="author" content="Giancarlos Salas">
@@ -42,7 +42,7 @@
     
     
       
-        <title>F. Detracción - Greenter - Facturación Electrónica en Perú</title>
+        <title>Boleta de Venta - Greenter - Facturación Electrónica en Perú</title>
       
     
     
@@ -135,7 +135,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#factura-con-detracciones" tabindex="1" class="md-skip">
+      <a href="#boleta-de-venta" tabindex="1" class="md-skip">
         Saltar a contenido
       </a>
     
@@ -160,7 +160,7 @@
               Greenter - Facturación Electrónica en Perú
             </span>
             <span class="md-header-nav__topic">
-              F. Detracción
+              Boleta de Venta
             </span>
           
         </div>
@@ -424,55 +424,11 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-      
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        F. Detracción
-      </label>
-    
-    <a href="./" title="F. Detracción" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../detraccion/" title="F. Detracción" class="md-nav__link">
       F. Detracción
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">Tabla de contenidos</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#codigo" title="Código" class="md-nav__link">
-    Código
-  </a>
-  
-</li>
-      
-      
-      
-      
-      
-        <li class="md-nav__item">
-          <a href="#__comments" title="Comentarios" class="md-nav__link md-nav__link--active">
-            Comentarios
-          </a>
-        </li>
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
     
@@ -492,11 +448,55 @@
       
       
 
+  
 
-  <li class="md-nav__item">
-    <a href="../boleta/" title="Boleta de Venta" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Boleta de Venta
+      </label>
+    
+    <a href="./" title="Boleta de Venta" class="md-nav__link md-nav__link--active">
       Boleta de Venta
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Tabla de contenidos</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#ejemplo" title="Ejemplo" class="md-nav__link">
+    Ejemplo
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+        <li class="md-nav__item">
+          <a href="#__comments" title="Comentarios" class="md-nav__link md-nav__link--active">
+            Comentarios
+          </a>
+        </li>
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
     
@@ -557,8 +557,8 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#codigo" title="Código" class="md-nav__link">
-    Código
+  <a href="#ejemplo" title="Ejemplo" class="md-nav__link">
+    Ejemplo
   </a>
   
 </li>
@@ -585,72 +585,92 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/giansalex/greenter/edit/master/docs/examples/detraccion.md" title="Editar esta página" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/giansalex/greenter/edit/master/docs/examples/boleta.md" title="Editar esta página" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="factura-con-detracciones">Factura con Detracciones<a class="headerlink" href="#factura-con-detracciones" title="Permanent link">&para;</a></h1>
-<blockquote>
-<p>Las lineas resaltadas son propias de este modelo de factura.</p>
-</blockquote>
-<h2 id="codigo">Código<a class="headerlink" href="#codigo" title="Permanent link">&para;</a></h2>
+                <h1 id="boleta-de-venta">Boleta de Venta<a class="headerlink" href="#boleta-de-venta" title="Permanent link">&para;</a></h1>
+<p>Este ejemplo muestra la creación del XML para una boleta de venta electrónica, empleando el estándar UBL 2.1</p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>Según normativa de SUNAT, las boletas electronicas se envian mediante el resumen diario. Para propósitos de prueba y validar el xml generado puede hacer uso del servicio beta.</p>
+</div>
+<h2 id="ejemplo">Ejemplo<a class="headerlink" href="#ejemplo" title="Permanent link">&para;</a></h2>
 <div class="codehilite"><pre><span></span><span class="cp">&lt;?php</span>
-<span class="k">use</span> <span class="nx">Greenter\Model\Sale\Detraction</span><span class="p">;</span>
+
+<span class="k">use</span> <span class="nx">Greenter\Model\Client\Client</span><span class="p">;</span>
+<span class="k">use</span> <span class="nx">Greenter\Model\Company\Company</span><span class="p">;</span>
+<span class="k">use</span> <span class="nx">Greenter\Model\Company\Address</span><span class="p">;</span>
 <span class="k">use</span> <span class="nx">Greenter\Model\Sale\Invoice</span><span class="p">;</span>
-<span class="k">use</span> <span class="nx">Greenter\Model\Sale\Legend</span><span class="p">;</span>
 <span class="k">use</span> <span class="nx">Greenter\Model\Sale\SaleDetail</span><span class="p">;</span>
+<span class="k">use</span> <span class="nx">Greenter\Model\Sale\Legend</span><span class="p">;</span>
 
-<span class="nv">$invoice</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Invoice</span><span class="p">();</span>
-<span class="nv">$invoice</span>
+<span class="k">require</span> <span class="no">__DIR__</span><span class="o">.</span><span class="s1">&#39;/vendor/autoload.php&#39;</span><span class="p">;</span>
+
+<span class="nv">$see</span> <span class="o">=</span> <span class="k">require</span> <span class="no">__DIR__</span><span class="o">.</span><span class="s1">&#39;/config.php&#39;</span><span class="p">;</span>
+
+<span class="c1">// Cliente</span>
+<span class="nv">$client</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Client</span><span class="p">();</span>
+<span class="nv">$client</span><span class="o">-&gt;</span><span class="na">setTipoDoc</span><span class="p">(</span><span class="s1">&#39;1&#39;</span><span class="p">)</span>
+    <span class="o">-&gt;</span><span class="na">setNumDoc</span><span class="p">(</span><span class="s1">&#39;46712369&#39;</span><span class="p">)</span>
+    <span class="o">-&gt;</span><span class="na">setRznSocial</span><span class="p">(</span><span class="s1">&#39;MARIA RAMOS ARTEAGA&#39;</span><span class="p">);</span>
+
+<span class="c1">// Emisor</span>
+<span class="nv">$address</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Address</span><span class="p">();</span>
+<span class="nv">$address</span><span class="o">-&gt;</span><span class="na">setUbigueo</span><span class="p">(</span><span class="s1">&#39;150101&#39;</span><span class="p">)</span>
+    <span class="o">-&gt;</span><span class="na">setDepartamento</span><span class="p">(</span><span class="s1">&#39;LIMA&#39;</span><span class="p">)</span>
+    <span class="o">-&gt;</span><span class="na">setProvincia</span><span class="p">(</span><span class="s1">&#39;LIMA&#39;</span><span class="p">)</span>
+    <span class="o">-&gt;</span><span class="na">setDistrito</span><span class="p">(</span><span class="s1">&#39;LIMA&#39;</span><span class="p">)</span>
+    <span class="o">-&gt;</span><span class="na">setUrbanizacion</span><span class="p">(</span><span class="s1">&#39;-&#39;</span><span class="p">)</span>
+    <span class="o">-&gt;</span><span class="na">setDireccion</span><span class="p">(</span><span class="s1">&#39;AV LOS GERUNDIOS&#39;</span><span class="p">);</span>
+
+<span class="nv">$company</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Company</span><span class="p">();</span>
+<span class="nv">$company</span><span class="o">-&gt;</span><span class="na">setRuc</span><span class="p">(</span><span class="s1">&#39;20000000001&#39;</span><span class="p">)</span>
+    <span class="o">-&gt;</span><span class="na">setRazonSocial</span><span class="p">(</span><span class="s1">&#39;EMPRESA SAC&#39;</span><span class="p">)</span>
+    <span class="o">-&gt;</span><span class="na">setNombreComercial</span><span class="p">(</span><span class="s1">&#39;EMPRESA&#39;</span><span class="p">)</span>
+    <span class="o">-&gt;</span><span class="na">setAddress</span><span class="p">(</span><span class="nv">$address</span><span class="p">);</span>
+
+<span class="c1">// Venta</span>
+<span class="nv">$invoice</span> <span class="o">=</span> <span class="p">(</span><span class="k">new</span> <span class="nx">Invoice</span><span class="p">())</span>
     <span class="o">-&gt;</span><span class="na">setUblVersion</span><span class="p">(</span><span class="s1">&#39;2.1&#39;</span><span class="p">)</span>
-<span class="hll">    <span class="o">-&gt;</span><span class="na">setTipoOperacion</span><span class="p">(</span><span class="s1">&#39;1001&#39;</span><span class="p">)</span> <span class="c1">// detracción</span>
-</span>    <span class="o">-&gt;</span><span class="na">setTipoDoc</span><span class="p">(</span><span class="s1">&#39;01&#39;</span><span class="p">)</span>
-    <span class="o">-&gt;</span><span class="na">setSerie</span><span class="p">(</span><span class="s1">&#39;F001&#39;</span><span class="p">)</span>
-    <span class="o">-&gt;</span><span class="na">setCorrelativo</span><span class="p">(</span><span class="s1">&#39;123&#39;</span><span class="p">)</span>
-    <span class="o">-&gt;</span><span class="na">setFechaEmision</span><span class="p">(</span><span class="k">new</span> <span class="nx">\DateTime</span><span class="p">())</span>
+    <span class="o">-&gt;</span><span class="na">setTipoOperacion</span><span class="p">(</span><span class="s1">&#39;0101&#39;</span><span class="p">)</span> <span class="c1">// Catalog. 51</span>
+    <span class="o">-&gt;</span><span class="na">setTipoDoc</span><span class="p">(</span><span class="s1">&#39;01&#39;</span><span class="p">)</span>
+    <span class="o">-&gt;</span><span class="na">setSerie</span><span class="p">(</span><span class="s1">&#39;B001&#39;</span><span class="p">)</span>
+    <span class="o">-&gt;</span><span class="na">setCorrelativo</span><span class="p">(</span><span class="s1">&#39;1&#39;</span><span class="p">)</span>
+    <span class="o">-&gt;</span><span class="na">setFechaEmision</span><span class="p">(</span><span class="k">new</span> <span class="nx">DateTime</span><span class="p">())</span>
     <span class="o">-&gt;</span><span class="na">setTipoMoneda</span><span class="p">(</span><span class="s1">&#39;PEN&#39;</span><span class="p">)</span>
-    <span class="o">-&gt;</span><span class="na">setClient</span><span class="p">(</span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">getClient</span><span class="p">())</span>
-    <span class="o">-&gt;</span><span class="na">setCompany</span><span class="p">(</span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">getCompany</span><span class="p">())</span>
-    <span class="o">-&gt;</span><span class="na">setMtoOperGravadas</span><span class="p">(</span><span class="mi">200</span><span class="p">)</span>
-    <span class="o">-&gt;</span><span class="na">setMtoIGV</span><span class="p">(</span><span class="mi">36</span><span class="p">)</span>
-    <span class="o">-&gt;</span><span class="na">setValorVenta</span><span class="p">(</span><span class="mi">200</span><span class="p">)</span>
-    <span class="o">-&gt;</span><span class="na">setTotalImpuestos</span><span class="p">(</span><span class="mi">36</span><span class="p">)</span>
-    <span class="o">-&gt;</span><span class="na">setMtoImpVenta</span><span class="p">(</span><span class="mi">236</span><span class="p">)</span>
-    <span class="o">-&gt;</span><span class="na">setDetraccion</span><span class="p">(</span>
-    <span class="c1">// MONEDA SIEMPRE EN SOLES</span>
-<span class="hll">        <span class="p">(</span><span class="k">new</span> <span class="nx">Detraction</span><span class="p">())</span>
-</span><span class="hll">            <span class="c1">// Carnes y despojos comestibles</span>
-</span><span class="hll">            <span class="o">-&gt;</span><span class="na">setCodBienDetraccion</span><span class="p">(</span><span class="s1">&#39;014&#39;</span><span class="p">)</span> <span class="c1">// catalog. 54</span>
-</span><span class="hll">            <span class="c1">// Deposito en cuenta</span>
-</span><span class="hll">            <span class="o">-&gt;</span><span class="na">setCodMedioPago</span><span class="p">(</span><span class="s1">&#39;001&#39;</span><span class="p">)</span> <span class="c1">// catalog. 59</span>
-</span><span class="hll">            <span class="o">-&gt;</span><span class="na">setCtaBanco</span><span class="p">(</span><span class="s1">&#39;0004-3342343243&#39;</span><span class="p">)</span>
-</span><span class="hll">            <span class="o">-&gt;</span><span class="na">setPercent</span><span class="p">(</span><span class="mf">4.00</span><span class="p">)</span>
-</span><span class="hll">            <span class="o">-&gt;</span><span class="na">setMount</span><span class="p">(</span><span class="mf">9.44</span><span class="p">)</span>
-</span>    <span class="p">);</span>
+    <span class="o">-&gt;</span><span class="na">setClient</span><span class="p">(</span><span class="nv">$client</span><span class="p">)</span>
+    <span class="o">-&gt;</span><span class="na">setMtoOperGravadas</span><span class="p">(</span><span class="mf">100.00</span><span class="p">)</span>
+    <span class="o">-&gt;</span><span class="na">setMtoIGV</span><span class="p">(</span><span class="mf">18.00</span><span class="p">)</span>
+    <span class="o">-&gt;</span><span class="na">setTotalImpuestos</span><span class="p">(</span><span class="mf">18.00</span><span class="p">)</span>
+    <span class="o">-&gt;</span><span class="na">setValorVenta</span><span class="p">(</span><span class="mf">100.00</span><span class="p">)</span>
+    <span class="o">-&gt;</span><span class="na">setMtoImpVenta</span><span class="p">(</span><span class="mf">118.00</span><span class="p">)</span>
+    <span class="o">-&gt;</span><span class="na">setCompany</span><span class="p">(</span><span class="nv">$company</span><span class="p">);</span>
 
-<span class="nv">$detail</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">SaleDetail</span><span class="p">();</span>
-<span class="nv">$detail</span><span class="o">-&gt;</span><span class="na">setCodProducto</span><span class="p">(</span><span class="s1">&#39;P001&#39;</span><span class="p">)</span>
+<span class="nv">$item</span> <span class="o">=</span> <span class="p">(</span><span class="k">new</span> <span class="nx">SaleDetail</span><span class="p">())</span>
+    <span class="o">-&gt;</span><span class="na">setCodProducto</span><span class="p">(</span><span class="s1">&#39;P001&#39;</span><span class="p">)</span>
     <span class="o">-&gt;</span><span class="na">setUnidad</span><span class="p">(</span><span class="s1">&#39;NIU&#39;</span><span class="p">)</span>
-    <span class="o">-&gt;</span><span class="na">setDescripcion</span><span class="p">(</span><span class="s1">&#39;PROD 1&#39;</span><span class="p">)</span>
     <span class="o">-&gt;</span><span class="na">setCantidad</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
-    <span class="o">-&gt;</span><span class="na">setMtoValorUnitario</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
-    <span class="o">-&gt;</span><span class="na">setMtoValorVenta</span><span class="p">(</span><span class="mi">200</span><span class="p">)</span>
-    <span class="o">-&gt;</span><span class="na">setMtoBaseIgv</span><span class="p">(</span><span class="mi">200</span><span class="p">)</span>
-    <span class="o">-&gt;</span><span class="na">setPorcentajeIgv</span><span class="p">(</span><span class="mi">18</span><span class="p">)</span>
-    <span class="o">-&gt;</span><span class="na">setIgv</span><span class="p">(</span><span class="mi">36</span><span class="p">)</span>
+    <span class="o">-&gt;</span><span class="na">setDescripcion</span><span class="p">(</span><span class="s1">&#39;PRODUCTO 1&#39;</span><span class="p">)</span>
+    <span class="o">-&gt;</span><span class="na">setMtoBaseIgv</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
+    <span class="o">-&gt;</span><span class="na">setPorcentajeIgv</span><span class="p">(</span><span class="mf">18.00</span><span class="p">)</span> <span class="c1">// 18%</span>
+    <span class="o">-&gt;</span><span class="na">setIgv</span><span class="p">(</span><span class="mf">18.00</span><span class="p">)</span>
     <span class="o">-&gt;</span><span class="na">setTipAfeIgv</span><span class="p">(</span><span class="s1">&#39;10&#39;</span><span class="p">)</span>
-    <span class="o">-&gt;</span><span class="na">setTotalImpuestos</span><span class="p">(</span><span class="mi">36</span><span class="p">)</span>
-    <span class="o">-&gt;</span><span class="na">setMtoPrecioUnitario</span><span class="p">(</span><span class="mi">118</span><span class="p">)</span>
-<span class="p">;</span>
+    <span class="o">-&gt;</span><span class="na">setTotalImpuestos</span><span class="p">(</span><span class="mf">18.00</span><span class="p">)</span>
+    <span class="o">-&gt;</span><span class="na">setMtoValorVenta</span><span class="p">(</span><span class="mf">100.00</span><span class="p">)</span>
+    <span class="o">-&gt;</span><span class="na">setMtoValorUnitario</span><span class="p">(</span><span class="mf">50.00</span><span class="p">)</span>
+    <span class="o">-&gt;</span><span class="na">setMtoPrecioUnitario</span><span class="p">(</span><span class="mf">59.00</span><span class="p">);</span>
 
-<span class="nv">$invoice</span><span class="o">-&gt;</span><span class="na">setDetails</span><span class="p">([</span><span class="nv">$detail</span><span class="p">])</span>
-    <span class="o">-&gt;</span><span class="na">setLegends</span><span class="p">([</span>
-        <span class="p">(</span><span class="k">new</span> <span class="nx">Legend</span><span class="p">())</span>
-            <span class="o">-&gt;</span><span class="na">setCode</span><span class="p">(</span><span class="s1">&#39;1000&#39;</span><span class="p">)</span>
-            <span class="o">-&gt;</span><span class="na">setValue</span><span class="p">(</span><span class="s1">&#39;SON DOSCIENTOS TREINTA Y SEIS CON OO/100 SOLES&#39;</span><span class="p">),</span>
-        <span class="p">(</span><span class="k">new</span> <span class="nx">Legend</span><span class="p">())</span>
-<span class="hll">            <span class="o">-&gt;</span><span class="na">setCode</span><span class="p">(</span><span class="s1">&#39;2006&#39;</span><span class="p">)</span>
-</span><span class="hll">            <span class="o">-&gt;</span><span class="na">setValue</span><span class="p">(</span><span class="s1">&#39;Operación sujeta a detracción&#39;</span><span class="p">)</span>
-</span>    <span class="p">]);</span>
+<span class="nv">$legend</span> <span class="o">=</span> <span class="p">(</span><span class="k">new</span> <span class="nx">Legend</span><span class="p">())</span>
+    <span class="o">-&gt;</span><span class="na">setCode</span><span class="p">(</span><span class="s1">&#39;1000&#39;</span><span class="p">)</span>
+    <span class="o">-&gt;</span><span class="na">setValue</span><span class="p">(</span><span class="s1">&#39;SON DOSCIENTOS TREINTA Y SEIS CON 00/100 SOLES&#39;</span><span class="p">);</span>
+
+<span class="nv">$invoice</span><span class="o">-&gt;</span><span class="na">setDetails</span><span class="p">([</span><span class="nv">$item</span><span class="p">])</span>
+        <span class="o">-&gt;</span><span class="na">setLegends</span><span class="p">([</span><span class="nv">$legend</span><span class="p">]);</span>
+
+<span class="nv">$xml</span> <span class="o">=</span> <span class="nv">$see</span><span class="o">-&gt;</span><span class="na">getXmlSigned</span><span class="p">(</span><span class="nv">$invoice</span><span class="p">);</span>
+
+<span class="c1">// Guardar XML</span>
+<span class="nb">file_put_contents</span><span class="p">(</span><span class="nv">$invoice</span><span class="o">-&gt;</span><span class="na">getName</span><span class="p">()</span><span class="o">.</span><span class="s1">&#39;.xml&#39;</span><span class="p">,</span> <span class="nv">$xml</span><span class="p">);</span>
 </pre></div>
                 
                   
@@ -664,9 +684,9 @@
   <div id="disqus_thread"></div>
   <script>
     var disqus_config = function () {
-      this.page.url = "https://giansalex.github.io/greenter/examples/detraccion/";
+      this.page.url = "https://giansalex.github.io/greenter/examples/boleta/";
       this.page.identifier =
-        "/examples/detraccion/";
+        "/examples/boleta/";
     };
     (function() {
       var d = document, s = d.createElement("script");
@@ -688,7 +708,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../anticipo/" title="F. Anticipos" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../exportacion/" title="F. Exportación" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -697,19 +717,19 @@
                 <span class="md-footer-nav__direction">
                   Anterior
                 </span>
-                F. Anticipos
+                F. Exportación
               </span>
             </div>
           </a>
         
         
-          <a href="../exportacion/" title="F. Exportación" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../contingencia/" title="Contingencia" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Siguiente
                 </span>
-                F. Exportación
+                Contingencia
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
