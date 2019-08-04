@@ -672,6 +672,7 @@
         <span class="o">-&gt;</span><span class="na">setPorcentajeIgv</span><span class="p">(</span><span class="mf">18.0</span><span class="p">)</span>
         <span class="o">-&gt;</span><span class="na">setIgv</span><span class="p">(</span><span class="mf">0.236</span><span class="p">)</span>
 <span class="hll">        <span class="o">-&gt;</span><span class="na">setIcbper</span><span class="p">(</span><span class="mf">0.40</span><span class="p">)</span> <span class="c1">// (cantidad)*(factor ICBPER)</span>
+</span><span class="hll">        <span class="o">-&gt;</span><span class="na">setFactorIcbper</span><span class="p">(</span><span class="mf">0.10</span><span class="p">)</span>
 </span>        <span class="o">-&gt;</span><span class="na">setTotalImpuestos</span><span class="p">(</span><span class="mi">36</span><span class="p">)</span>
     <span class="p">;</span>
 
@@ -684,10 +685,6 @@
 </pre></div>
 
 
-<div class="admonition tip">
-<p class="admonition-title">Factor ICBPER</p>
-<p>Puedes cambiar el factor ICBPER usando el campo <code>$bolsa-&gt;setFactorIcbper(0.10)</code></p>
-</div>
 <h2 id="monto-icbper">Monto ICBPER<a class="headerlink" href="#monto-icbper" title="Permanent link">&para;</a></h2>
 <p>La cuantía del impuesto al consumo de las bolsas de plástico es gradual y se aplica por la adquisición unitaria de bolsas de plástico, de acuerdo con el siguiente cronograma: </p>
 <table>
