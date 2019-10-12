@@ -638,10 +638,13 @@
     <span class="o">-&gt;</span><span class="na">setClient</span><span class="p">(</span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">getClient</span><span class="p">())</span>
     <span class="o">-&gt;</span><span class="na">setCompany</span><span class="p">(</span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">getCompany</span><span class="p">())</span>
     <span class="o">-&gt;</span><span class="na">setMtoOperGravadas</span><span class="p">(</span><span class="mf">200.20</span><span class="p">)</span>
-    <span class="o">-&gt;</span><span class="na">setMtoIGV</span><span class="p">(</span><span class="mf">36.24</span><span class="p">)</span>
+    <span class="o">-&gt;</span><span class="na">setMtoIGV</span><span class="p">(</span><span class="mf">36.04</span><span class="p">)</span>
 <span class="hll">    <span class="o">-&gt;</span><span class="na">setIcbper</span><span class="p">(</span><span class="mf">0.40</span><span class="p">)</span>
-</span>    <span class="o">-&gt;</span><span class="na">setTotalImpuestos</span><span class="p">(</span><span class="mf">36.64</span><span class="p">)</span>
-    <span class="o">-&gt;</span><span class="na">setMtoImpVenta</span><span class="p">(</span><span class="mf">236.64</span><span class="p">);</span>
+</span>    <span class="o">-&gt;</span><span class="na">setTotalImpuestos</span><span class="p">(</span><span class="mf">36.44</span><span class="p">)</span>
+    <span class="o">-&gt;</span><span class="na">setValorVenta</span><span class="p">(</span><span class="mf">200.20</span><span class="p">)</span>
+    <span class="o">-&gt;</span><span class="na">setSubTotal</span><span class="p">(</span><span class="mf">236.64</span><span class="p">)</span>
+    <span class="o">-&gt;</span><span class="na">setRedondeo</span><span class="p">(</span><span class="mf">0.36</span><span class="p">)</span>
+    <span class="o">-&gt;</span><span class="na">setMtoImpVenta</span><span class="p">(</span><span class="mi">237</span><span class="p">);</span>
 
     <span class="nv">$detail</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">SaleDetail</span><span class="p">();</span>
     <span class="nv">$detail</span>
@@ -668,19 +671,19 @@
         <span class="o">-&gt;</span><span class="na">setMtoPrecioUnitario</span><span class="p">(</span><span class="mf">0.059</span><span class="p">)</span>
         <span class="o">-&gt;</span><span class="na">setMtoValorVenta</span><span class="p">(</span><span class="mf">0.20</span><span class="p">)</span>
         <span class="o">-&gt;</span><span class="na">setTipAfeIgv</span><span class="p">(</span><span class="s1">&#39;10&#39;</span><span class="p">)</span>
-        <span class="o">-&gt;</span><span class="na">setMtoBaseIgv</span><span class="p">(</span><span class="mf">0.20</span><span class="p">)</span>
-        <span class="o">-&gt;</span><span class="na">setPorcentajeIgv</span><span class="p">(</span><span class="mf">18.0</span><span class="p">)</span>
-        <span class="o">-&gt;</span><span class="na">setIgv</span><span class="p">(</span><span class="mf">0.24</span><span class="p">)</span>
-<span class="hll">        <span class="o">-&gt;</span><span class="na">setIcbper</span><span class="p">(</span><span class="mf">0.40</span><span class="p">)</span> <span class="c1">// (cantidad)*(factor ICBPER)</span>
-</span><span class="hll">        <span class="o">-&gt;</span><span class="na">setFactorIcbper</span><span class="p">(</span><span class="mf">0.10</span><span class="p">)</span>
-</span>        <span class="o">-&gt;</span><span class="na">setTotalImpuestos</span><span class="p">(</span><span class="mf">0.64</span><span class="p">)</span>
+<span class="hll">        <span class="o">-&gt;</span><span class="na">setMtoBaseIgv</span><span class="p">(</span><span class="mf">0.20</span><span class="p">)</span>
+</span><span class="hll">        <span class="o">-&gt;</span><span class="na">setPorcentajeIgv</span><span class="p">(</span><span class="mf">18.0</span><span class="p">)</span>
+</span>        <span class="o">-&gt;</span><span class="na">setIgv</span><span class="p">(</span><span class="mf">0.04</span><span class="p">)</span>
+        <span class="o">-&gt;</span><span class="na">setIcbper</span><span class="p">(</span><span class="mf">0.40</span><span class="p">)</span> <span class="c1">// (cantidad)*(factor ICBPER)</span>
+        <span class="o">-&gt;</span><span class="na">setFactorIcbper</span><span class="p">(</span><span class="mf">0.10</span><span class="p">)</span>
+        <span class="o">-&gt;</span><span class="na">setTotalImpuestos</span><span class="p">(</span><span class="mf">0.44</span><span class="p">)</span>
     <span class="p">;</span>
 
 <span class="nv">$invoice</span><span class="o">-&gt;</span><span class="na">setDetails</span><span class="p">([</span><span class="nv">$detail</span><span class="p">,</span> <span class="nv">$bolsa</span><span class="p">])</span>
     <span class="o">-&gt;</span><span class="na">setLegends</span><span class="p">([</span>
         <span class="p">(</span><span class="k">new</span> <span class="nx">Legend</span><span class="p">())</span>
             <span class="o">-&gt;</span><span class="na">setCode</span><span class="p">(</span><span class="s1">&#39;1000&#39;</span><span class="p">)</span>
-            <span class="o">-&gt;</span><span class="na">setValue</span><span class="p">(</span><span class="s1">&#39;SON DOSCIENTOS TREINTA Y SEIS CON 64/100 SOLES&#39;</span><span class="p">)</span>
+            <span class="o">-&gt;</span><span class="na">setValue</span><span class="p">(</span><span class="s1">&#39;SON DOSCIENTOS TREINTA Y SIETE CON 00/100 SOLES&#39;</span><span class="p">)</span>
     <span class="p">]);</span>
 </pre></div>
 
